@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>VELORA: Online Fashion & Clothing Store For Men, Women & Kids</title>
+    <meta charset="UTF-8">
+    <!-- META -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/E-Project Favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Your Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+        background-color: #ffffff;
+    }
+
+    .form-container {
+        max-width: 550px;
+        margin: 80px auto;
+        padding: 30px;
+    }
+
+    .toggle-link {
+        cursor: pointer;
+    }
+
+    .toggle-link:hover {
+        text-decoration: underline;
+    }
+
+    .form-control:focus {
+        border-color: #0d6efd;
+        box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+    }
+</style>
+
+<body>
+    <div class="form-container">
+        <!-- Login Form -->
+        <div id="loginForm">
+            <h2 class="text-center mb-3" style="font:bold 22px/1.5 Arial, sans-serif;;">LOGIN</h2>
+            <p class="text-center text-muted fw-bold" style="font: 16px Arial, sans-serif;">Enter your email and
+                password
+                to login:</p>
+            <form id="loginFormElm">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="user_email" placeholder="User Email" required>
+                    <label for="user_email">User Email</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="loginPassword" placeholder="Password" required>
+                    <label for="loginPassword">Password</label>
+                </div>
+                <div class="mb-3 text-end">
+                    <a href="#signupForm" class="text-decoration-none" style="color: rgb(110, 107, 107);">Forgot your
+                        password?</a>
+                </div>
+                <button type="submit" class="btn btn-dark w-100">LOGIN</button>
+            </form>
+            <p class="text-center mt-3" style="font: 16px Arial, sans-serif;">Don't have an account? <span
+                    class="toggle-link" id="toggleSignup" style="color: rgb(75, 72, 72); padding-left: 5px;">SIGN
+                    UP</span>
+            </p>
+        </div>
+
+        <!-- Signup Form -->
+        <div id="signupForm" style="display:none;">
+            <h2 class="text-center mb-2" style="font:bold 22px/1.5 Arial, sans-serif;;">SIGN UP</h2>
+            <p class="text-center text-muted" style="font: bold 16px Arial, sans-serif;">Please fill in the information
+                below:</p>
+            <form id="signupFormElm">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+                    <label for="firstName">First Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+                    <label for="lastName">Last Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="signupEmail" placeholder="E-mail" required>
+                    <label for="signupEmail">E-mail</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="signupPassword" placeholder="Password" required>
+                    <label for="signupPassword">Password</label>
+                </div>
+                <button type="submit" class="btn btn-dark w-100">CREATE ACCOUNT</button>
+            </form>
+            <p class="text-center mt-3" style="font: 16px Arial, sans-serif;">Already have an account? <span
+                    class="toggle-link" id="toggleLogin" style="color: rgb(75, 72, 72); padding-left: 5px;">Login</span>
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS (only once) -->
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Toggle handlers for the "SIGN UP" / "Login" links
+        document.getElementById("toggleSignup").addEventListener("click", function () {
+            document.getElementById("loginForm").style.display = "none";
+            document.getElementById("signupForm").style.display = "block";
+        });
+
+        document.getElementById("toggleLogin").addEventListener("click", function () {
+            document.getElementById("signupForm").style.display = "none";
+            document.getElementById("loginForm").style.display = "block";
+        });
+
+        /* --------- Signup System --------- */
+        document.querySelector("#signupFormElm").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            let first = document.getElementById("firstName").value.trim();
+            let last = document.getElementById("lastName").value.trim();
+            let email = document.getElementById("signupEmail").value.trim();
+            let password = document.getElementById("signupPassword").value.trim();
+
+            if (first === "" || email === "" || password === "") {
+                alert("Please fill all fields!");
+                return;
+            }
+
+            let username = first + (last ? " " + last : "");
+
+            let userData = {
+                username: username,
+                email: email,
+                password: password
+            };
+
+            localStorage.setItem("userAccount", JSON.stringify(userData));
+
+            alert("Signup Successfully! Now you can login.");
+
+            // After signup show login
+            document.getElementById("signupForm").style.display = "none";
+            document.getElementById("loginForm").style.display = "block";
+        });
+
+        /* --------- Login System --------- */
+        document.querySelector("#loginFormElm").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            let loginUser = document.getElementById("user_email").value.trim();
+            let loginPass = document.getElementById("loginPassword").value.trim();
+
+            let storedUser = localStorage.getItem("userAccount");
+
+            if (storedUser === null) {
+                alert("Please signup first before login!");
+                document.getElementById("loginForm").style.display = "none";
+                document.getElementById("signupForm").style.display = "block";
+                return;
+            }
+
+            let user = JSON.parse(storedUser);
+
+            if (loginUser === user.email && loginPass === user.password) {
+                alert("Login Successful! Welcome " + user.username);
+                window.location.href = "index.html";
+            } else {
+                alert("Wrong email or password!");
+            }
+        });
+
+
+        /* --------- Auto show signup if no user --------- */
+        window.addEventListener("load", function () {
+            if (localStorage.getItem("userAccount") === null) {
+                document.getElementById("loginForm").style.display = "none";
+                document.getElementById("signupForm").style.display = "block";
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>VELORA: Online Fashion & Clothing Store For Men, Women & Kids</title>
+    <meta charset="UTF-8">
+    <!-- META -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Websites KeyWords -->
+    <meta name="keywords"
+        content="online clothing store,online fashion store,fashion clothing online,premium clothing brand,buy clothes online,trendy fashion store,modern clothing brand">
+    <!-- Websites Description-->
+    <meta name="description"
+        content="VELORA is a premium online fashion store offering trendy clothing for men, women and kids. Shop modern styles, high quality outfits and fashion accessories at affordable prices.">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/E-Project Favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Your Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Start Header Section -->
+    <header id="header_start" class="container-fluid d-flex align-items-center justify-content-between">
+        <div class="flex-grow-1 text-center text-truncate">
+            <p id="slideText_Header" class="text-white mb-0">
+                Free Shipping on all orders over 5000 🇵🇰.
+                <a href="index.html" class="sale-link">Shop Now →</a>
+            </p>
+        </div>
+        <button id="closeHeader-button" class="btn btn-sm text-white ms-3">&times; close</button>
+    </header>
+    <!-- Header Section End -->
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- Navigation Section Start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+        <div class="container-fluid position-relative">
+            <!-- Toggler Button (Mobile Screen)-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Brand / Logo Pic  -->
+            <a class="navbar-brand mx-auto d-flex align-items-center order-2 order-lg-0" href="index.html"
+                aria-label="VELORA home">
+                <img src="./images/E-Project Logo.png" alt="VELORA Logo" width="100%" height="100%" class="img-fluid">
+            </a>
+
+            <!--Right side icons-->
+            <!-- (1)Account Icons -->
+            <div class="d-flex align-items-center gap-2 order-3 me-2 icons-right">
+                <a class="text-muted-account" href="account.html" title="Account" aria-label="Account"
+                    id="nav-link-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-person" viewBox="0 0 16 16">
+                        <path
+                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                    </svg>
+                </a>
+
+
+                <!-- (2)Search Bar Icon -->
+
+                <a class="text-muted nav-link-icon" href="#" title="Search" aria-label="Search" id="searchToggle"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    </svg></a>
+
+                <!-- (3) Add to Cart Icon -->
+                <div class="cart-icon" data-bs-toggle="offcanvas" data-bs-target="#cartCanvas" id="add_to_cart">
+                    🛒 <span id="cartCount" class="cart-badge">0</span>
+                </div>
+            </div>
+
+            <!-- Desktop Navbar -->
+            <div class="collapse navbar-collapse d-none d-lg-flex justify-content-center" id="mainNav">
+                <ul class="navbar-nav">
+                    <!-- EXAMPLE: MEN dropdown (split) -->
+                    <li class="nav-item dropdown px-1">
+                        <!-- main link - navigates -->
+                        <a class="nav-link" href="men.html">MENS</a>
+                        <!-- split toggle - opens dropdown only -->
+                        <button class="nav-link dropdown-toggle dropdown-toggle-split" id="menDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false" aria-label="Open MENS menu"></button>
+
+                        <ul class="dropdown-menu" aria-labelledby="menDropdown">
+                            <li><a class="dropdown-item" href="men-eastern wear.html">Eastern Wear</a></li>
+                            <li><a class="dropdown-item" href="mens-western wear.html">Western Wear</a></li>
+                            <li><a class="dropdown-item" href="mens-wedding.html">Wedding / Formal Wear</a></li>
+                            <li><a class="dropdown-item" href="mens-winter wear.html">Winter Wear</a></li>
+                            <li><a class="dropdown-item" href="mens-accessories.html">Accessories</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- WOMENS -->
+                    <li class="nav-item dropdown px-1">
+                        <a class="nav-link" href="wedding.html">WOMENS</a>
+                        <button class="nav-link dropdown-toggle dropdown-toggle-split" id="womenDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false" aria-label="Open WOMENS menu"></button>
+                        <ul class="dropdown-menu" aria-labelledby="womenDropdown">
+                            <li><a class="dropdown-item" href="summer.html">Summer Wear</a></li>
+                            <li><a class="dropdown-item" href="winter.html">Winter Wear</a></li>
+                            <li><a class="dropdown-item" href="watches.html">Watches</a></li>
+                            <li><a class="dropdown-item" href="jewellery.html">Jewellery</a></li>
+                            <li><a class="dropdown-item" href="fragrances.html">Fragrances</a></li>
+                            <li><a class="dropdown-item" href="wedding.html">Wedding Wear</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- KIDS -->
+                    <li class="nav-item dropdown px-1">
+                        <a class="nav-link" href="baby.html">KIDS</a>
+                        <button class="nav-link dropdown-toggle dropdown-toggle-split" id="kidsDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false" aria-label="Open KIDS menu"></button>
+                        <ul class="dropdown-menu" aria-labelledby="kidsDropdown">
+                            <li><a class="dropdown-item" href="boys.html">Boys</a></li>
+                            <li><a class="dropdown-item" href="girls.html">Girls</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- HOME -->
+                    <li class="nav-item dropdown px-1">
+                        <a class="nav-link active" href="bedding.html" aria-current="page">HOME</a>
+                        <button class="nav-link dropdown-toggle dropdown-toggle-split" id="homeDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false" aria-label="Open HOME menu"></button>
+                        <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+                            <li><a class="dropdown-item" href="bedding.html">Bedding</a></li>
+                            <li><a class="dropdown-item" href="decor.html">Decor</a></li>
+                            <li><a class="dropdown-item" href="kitchen.html">Kitchen</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item px-2"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item px-2"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item px-2"><a class="nav-link" href="compare.html">Compare Product🆚</a></li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Mobile Offcanvas Menu -->
+    <nav class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="men.html" data-bs-toggle="dropdown">MENS</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="men-eastern wear.html">Eastern Wear</a></li>
+                        <li><a class="dropdown-item" href="mens-western wear.html">Western Wear</a></li>
+                        <li><a class="dropdown-item" href="mens-wedding.html">Wedding / Formal Wear</a></li>
+                        <li><a class="dropdown-item" href="mens-winter wear.html">Winter Wear</a></li>
+                        <li><a class="dropdown-item" href="mens-accessories.html">Accessories</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="wedding.html" data-bs-toggle="dropdown">WOMENS</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="summer.html">Summer Wear</a></li>
+                        <li><a class="dropdown-item" href="winter.html">Winter Wear</a></li>
+                        <li><a class="dropdown-item" href="watches.html">Watches</a></li>
+                        <li><a class="dropdown-item" href="jewellery.html">Jewellery</a></li>
+                        <li><a class="dropdown-item" href="fragrances.html">Fragrances</a></li>
+                        <li><a class="dropdown-item" href="wedding.html">Wedding Wear</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="baby.html" data-bs-toggle="dropdown">KIDS</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="boys.html">Boys</a></li>
+                        <li><a class="dropdown-item" href="girls.html">Girls</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="bedding.html" data-bs-toggle="dropdown">HOME</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="bedding.html">Bedding</a></li>
+                        <li><a class="dropdown-item" href="decor.html">Decor</a></li>
+                        <li><a class="dropdown-item" href="kitchen.html">Kitchen</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="compare.html">Compare Product🆚</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Hidden Search Bar -->
+    <!-- SEARCH DROPDOWN-->
+    <search id="searchDropdown" class="search-dropdown bg-white border-bottom">
+        <div class="container d-flex align-items-center py-2 py-sm-1">
+
+            <!-- Search Icon -->
+            <span class="search-icon me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-search text-muted" viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                </svg>
+            </span>
+
+            <!-- Search Input -->
+            <input type="text" id="productSearch" placeholder="Search products..." class="form-control">
+            <!-- Close Button -->
+            <span id="closeSearch-button" class="ms-auto " style="cursor:pointer;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                    class="bi bi-x-lg text-muted" viewBox="0 0 16 16">
+                    <path
+                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                </svg>
+            </span>
+
+        </div>
+    </search>
+
+    <!-- Start Right Side Add to Cart ============================== -->
+    <!-- CART OFFCANVAS (RIGHT SIDE) -->
+    <aside class="offcanvas offcanvas-end p-3" tabindex="-1" id="cartCanvas">
+        <div class="d-flex justify-content-between">
+            <h4>Your Cart</h4>
+            <button class="btn btn-sm text-danger ms-3 fw-bold " id="closeCheckout-btn" data-bs-dismiss="offcanvas">
+                &times;<span class="ms-1 d-none d-sm-inline">Close</span>
+            </button>
+        </div>
+        <hr>
+        <div id="cartItems"></div>
+        <h5 class="mt-3">Total: Rs <span id="totalPrice">0</span></h5>
+        <button class="btn btn-primary w-100 mt-3" data-bs-toggle="offcanvas" data-bs-target="#checkoutCanvas">
+            Checkout
+        </button>
+    </aside>
+    <!-- CHECKOUT OFFCANVAS -->
+    <aside class="offcanvas offcanvas-end p-3" tabindex="-1" id="checkoutCanvas">
+        <div class="d-flex justify-content-between align-items-center">
+            <h4>Checkout</h4>
+            <button class="btn btn-sm text-danger ms-3 fw-bold " id="closeCheckout-btn" data-bs-dismiss="offcanvas">
+                &times;<span class="ms-1 d-none d-sm-inline">Close</span>
+            </button>
+        </div>
+        <hr>
+        <input class="form-control mb-2" placeholder="Full Name" required>
+        <input class="form-control mb-2" placeholder="Phone Number" required>
+        <input class="form-control mb-2" placeholder="Email Address" required>
+        <input class="form-control mb-2" placeholder="Address" required>
+        <input class="form-control mb-2" placeholder="Apt, suite, unit, building (optional)">
+        <input class="form-control mb-2" placeholder="City Name" required>
+        <button class="order-btn w-100 mt-2" id="placeOrderBtn">
+            Place Order
+        </button>
+        <div id="thankyou" class="thankyou-box">
+            ✅ Thank you! Your order has been placed successfully.
+        </div>
+    </aside>
+    <!-- NAVIGATION SECTION END  -->
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- Start Hero Section -->
+    <section class="container-fluid mens-clothing-section">
+        <aside class="container d-flex justify-content-between align-items-center mt-3">
+            <h2 class="section-title text-center mt-3">Women Watches</h2>
+            <div class="dropdown">
+                <button id="sort-dropdown" type="button" class="dropdown-toggle shorting-btn" data-bs-toggle="dropdown"
+                    aria-expanded="false">Sort By</button>
+                <ul class="dropdown-menu" id="sortMenu">
+                    <li><a class="dropdown-item" href="#" data-sort="featured">Featured</a></li>
+                    <li><a class="dropdown-item" href="#" data-sort="best">Best selling</a></li>
+                    <li><a class="dropdown-item" href="#" data-sort="az">Alphabetically, A-Z</a></li>
+                    <li><a class="dropdown-item" href="#" data-sort="za">Alphabetically, Z-A</a></li>
+                    <li><a class="dropdown-item" href="#" data-sort="low">Price, low to high</a></li>
+                    <li><a class="dropdown-item" href="#" data-sort="high">Price, high to low</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="row g-2" id="products">
+
+            <!-- WATCH 1 -->
+            <div class="col-6 col-md-3 item" data-name="Quartz Women's Watch" data-price="3499">
+                <div class="product-card">
+                    <img src="images/watch 1.jpg" class="card-img-top-product" alt="Quartz Women's Watch">
+                    <div class="card-body text-center">
+                        <h6 class="product-text">Quartz Women's Watch.</h6>
+                        <p class="product-price-new">Rs.3,499.00</p>
+                        <p class="product-desc">Stylish and durable timepieces for both casual and formal looks.</p>
+                    </div>
+                    <div class="card-buttons">
+                        <button type="button" class="add-to-cart-btn"
+                            onclick="openProductModal('Quartz Women\'s Watch', 3499.00, 'images/watch 1.jpg', 3499)">Add
+                            to Cart</button>
+                        <button type="button" class="more-info-btn"
+                            onclick="openModal('Quartz Women\'s Watch','images/watch 1.jpg',3499,'Gold','Slim quartz movement, water resistant','PDF/summer1.pdf')"
+                            data-bs-toggle="modal" data-bs-target="#cardModal">More Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WATCH 2 -->
+            <div class="col-6 col-md-3 item" data-name="Darci Pavé Watch" data-price="2250">
+                <div class="product-card">
+                    <img src="images/watch 2.jpg" class="card-img-top-product" alt="Darci Pavé Watch">
+                    <div class="card-body text-center">
+                        <h6 class="product-text">Darci Pavé Watch</h6>
+                        <p class="product-price-new">₨2,250</p>
+                        <p class="product-desc">Elegant pavé bezel with a refined bracelet strap.</p>
+                    </div>
+                    <div class="card-buttons">
+                        <button type="button" class="add-to-cart-btn"
+                            onclick="addToCart('Darci Pavé Watch',2250,'images/watch 2.jpg',2250)">Add to
+                            Cart</button>
+                        <button type="button" class="more-info-btn"
+                            onclick="openModal('Darci Pavé Watch','images/watch 2.jpg',2250,'Silver','Pavé bezel, mineral glass','PDF/summer1.pdf')"
+                            data-bs-toggle="modal" data-bs-target="#cardModal">More Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WATCH 3 -->
+            <div class="col-6 col-md-3 item" data-name="Bradshow Acetate Watch" data-price="2750">
+                <div class="product-card">
+                    <img src="images/watch 3.jpg" class="card-img-top-product" alt="Bradshow Acetate Watch">
+                    <div class="card-body text-center">
+                        <h6 class="product-text">Bradshow Acetate Watch</h6>
+                        <p class="product-price-new">₨2,750</p>
+                        <p class="product-desc">Acetate frame, minimalist dial and comfortable fit.</p>
+                    </div>
+                    <div class="card-buttons">
+                        <button type="button" class="add-to-cart-btn"
+                            onclick="addToCart('Bradshow Acetate Watch',2750,'images/watch 3.jpg',2750)">Add
+                            to Cart</button>
+                        <button type="button" class="more-info-btn"
+                            onclick="openModal('Bradshow Acetate Watch','images/watch 3.jpg',2750,'Tortoise','Lightweight acetate case','PDF/summer1.pdf')"
+                            data-bs-toggle="modal" data-bs-target="#cardModal">More Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WATCH 4 -->
+            <div class="col-6 col-md-3 item" data-name="Quartz Women's Watch (4)" data-price="4499">
+                <div class="product-card">
+                    <img src="images/watch 4.jpg" class="card-img-top-product" alt="Quartz Women's Watch 4">
+                    <div class="card-body text-center">
+                        <h6 class="product-text">Quartz Women's Watch</h6>
+                        <p class="product-price-new">Rs.4,499.00</p>
+                        <p class="product-desc">Classic quartz watch with a durable strap and elegant dial.</p>
+                    </div>
+                    <div class="card-buttons">
+                        <button type="button" class="add-to-cart-btn"
+                            onclick="addToCart('Quartz Women\'s Watch (4)',4499,'images/watch 4.jpg',4499)">Add
+                            to Cart</button>
+                        <button type="button" class="more-info-btn"
+                            onclick="openModal('Quartz Women\'s Watch (4)','images/watch 4.jpg',4499,'Rose Gold','Elegant dial with markers','PDF/summer1.pdf')"
+                            data-bs-toggle="modal" data-bs-target="#cardModal">More Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WATCH 5 -->
+            <div class="col-6 col-md-3 item" data-name="Quartz Women's Watch (5)" data-price="3499">
+                <div class="product-card">
+                    <img src="images/watch 5.jpg" class="card-img-top-product" alt="Quartz Women's Watch 5">
+                    <div class="card-body text-center">
+                        <h6 class="product-text">Quartz Women's Watch.</h6>
+                        <p class="product-price-new">Rs.3,499.00</p>
+                        <p class="product-desc">Smart everyday watch — lightweight and polished.</p>
+                    </div>
+                    <div class="card-buttons">
+                        <button type="button" class="add-to-cart-btn"
+                            onclick="addToCart('Quartz Women\'s Watch (5)',3499,'images/watch 5.jpg',3499)">Add
+                            to Cart</button>
+                        <button type="button" class="more-info-btn"
+                            onclick="openModal('Quartz Women\'s Watch (5)','images/watch 5.jpg',3499,'Champagne','Slim case, comfy strap','PDF/summer1.pdf')"
+                            data-bs-toggle="modal" data-bs-target="#cardModal">More Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WATCH 6 -->
+            <div class="col-6 col-md-3 item" data-name="Quartz Women's Watch (6)" data-price="3999">
+                <div class="product-card">
+                    <img src="images/watch 6.jpg" class="card-img-top-product" alt="Quartz Women's Watch 6">
+                    <div class="card-body text-center">
+                        <h6 class="product-text">Quartz Women's Watch.</h6>
+                        <p class="product-price-new">Rs.3,999.00</p>
+                        <p class="product-desc">Durable construction with clean minimalist design.</p>
+                    </div>
+                    <div class="card-buttons">
+                        <button type="button" class="add-to-cart-btn"
+                            onclick="addToCart('Quartz Women\'s Watch (6)',3999,'images/watch 6.jpg',3999)">Add
+                            to Cart</button>
+                        <button type="button" class="more-info-btn"
+                            onclick="openModal('Quartz Women\'s Watch (6)','images/watch 6.jpg',3999,'Black','Water resistant, day-date feature','PDF/summer1.pdf')"
+                            data-bs-toggle="modal" data-bs-target="#cardModal">More Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WATCH 7 -->
+            <div class="col-6 col-md-3 item" data-name="Women's Stainless Steel" data-price="9999">
+                <div class="product-card">
+                    <img src="images/watch 7.jpg" class="card-img-top-product" alt="Women's Stainless Steel">
+                    <div class="card-body text-center">
+                        <h6 class="product-text">Women's Stainless Steel</h6>
+                        <p class="product-price-new">Rs.9,999</p>
+                        <p class="product-desc">Premium stainless steel case and bracelet, long-lasting finish.</p>
+                    </div>
+                    <div class="card-buttons">
+                        <button type="button" class="add-to-cart-btn"
+                            onclick="addToCart('Women\'s Stainless Steel',9999,'images/watch 7.jpg',9999)">Add
+                            to Cart</button>
+                        <button type="button" class="more-info-btn"
+                            onclick="openModal('Women\'s Stainless Steel','images/watch 7.jpg',9999,'Silver','Stainless bracelet, polished finish','PDF/summer1.pdf')"
+                            data-bs-toggle="modal" data-bs-target="#cardModal">More Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WATCH 8 -->
+            <div class="col-6 col-md-3 item" data-name="Quartz Women's Watch (8)" data-price="3999">
+                <div class="product-card">
+                    <img src="images/watch 8.jpg" class="card-img-top-product" alt="Quartz Women's Watch 8">
+                    <div class="card-body text-center">
+                        <h6 class="product-text">Quartz Women's Watch.</h6>
+                        <p class="product-price-new">Rs.3,999.00</p>
+                        <p class="product-desc">Contemporary look with reliable quartz movement.</p>
+                    </div>
+                    <div class="card-buttons">
+                        <button type="button" class="add-to-cart-btn"
+                            onclick="addToCart('Quartz Women\'s Watch (8)',3999,'images/watch 8.jpg',3999)">Add
+                            to Cart</button>
+                        <button type="button" class="more-info-btn"
+                            onclick="openModal('Quartz Women\'s Watch (8)','images/watch 8.jpg',3999,'White','Slim strap, modern dial','PDF/summer1.pdf')"
+                            data-bs-toggle="modal" data-bs-target="#cardModal">More Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WATCH 9 -->
+            <div class="col-6 col-md-3 item" data-name="CURREN 9090" data-price="2999">
+                <div class="product-card">
+                    <img src="images/watch 9.jpg" class="card-img-top-product" alt="CURREN 9090">
+                    <div class="card-body text-center">
+                        <h6 class="product-text">CURREN 9090 Women's Stainless Steel Watch</h6>
+                        <p class="product-price-new">Rs.2,999.00</p>
+                        <p class="product-desc">Robust small-case watch with polished finish.</p>
+                    </div>
+                    <div class="card-buttons">
+                        <button type="button" class="add-to-cart-btn"
+                            onclick="addToCart('CURREN 9090 Women\'s Stainless Steel Watch',2999,'images/watch 9.jpg',2999)">Add
+                            to Cart</button>
+                        <button type="button" class="more-info-btn"
+                            onclick="openModal('CURREN 9090 Women\'s Stainless Steel Watch','images/watch 9.jpg',2999,'Black','Stainless steel strap, quartz','PDF/summer1.pdf')"
+                            data-bs-toggle="modal" data-bs-target="#cardModal">More Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WATCH 10 -->
+            <div class="col-6 col-md-3 item" data-name="CURREN 9087" data-price="4299">
+                <div class="product-card">
+                    <img src="images/watch 10.jpg" class="card-img-top-product" alt="CURREN 9087">
+                    <div class="card-body text-center">
+                        <h6 class="product-text">CURREN 9087 Women's Stainless Steel Watch</h6>
+                        <p class="product-price-new">Rs.4,299.00</p>
+                        <p class="product-desc">Stylish women’s watch with slim bezel and comfy strap.</p>
+                    </div>
+                    <div class="card-buttons">
+                        <button type="button" class="add-to-cart-btn"
+                            onclick="addToCart('CURREN 9087 Women\'s Stainless Steel Watch',4299,'images/watch 10.jpg',4299)">Add
+                            to Cart</button>
+                        <button type="button" class="more-info-btn"
+                            onclick="openModal('CURREN 9087 Women\'s Stainless Steel Watch','images/watch 10.jpg',4299,'Gold','Polished bezel, water resistant','PDF/summer1.pdf')"
+                            data-bs-toggle="modal" data-bs-target="#cardModal">More Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WATCH 11 -->
+            <div class="col-6 col-md-3 item" data-name="CURREN 9084" data-price="4499">
+                <div class="product-card">
+                    <img src="images/watch 11.jpg" class="card-img-top-product" alt="CURREN 9084">
+                    <div class="card-body text-center">
+                        <h6 class="product-text">CURREN 9084 Women's Stainless Steel Watch</h6>
+                        <p class="product-price-new">Rs.4,499.00</p>
+                        <p class="product-desc">Durable stainless finish with elegant face design.</p>
+                    </div>
+                    <div class="card-buttons">
+                        <button type="button" class="add-to-cart-btn"
+                            onclick="addToCart('CURREN 9084 Women\'s Stainless Steel Watch',4499,'images/watch 11.jpg',4499)">Add
+                            to Cart</button>
+                        <button type="button" class="more-info-btn"
+                            onclick="openModal('CURREN 9084 Women\'s Stainless Steel Watch','images/watch 11.jpg',4499,'Silver','Classic women\'s stainless watch','PDF/summer1.pdf')"
+                            data-bs-toggle="modal" data-bs-target="#cardModal">More Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WATCH 12 -->
+            <div class="col-6 col-md-3 item" data-name="CURREN 9015" data-price="3499">
+                <div class="product-card">
+                    <img src="images/watch 12.jpg" class="card-img-top-product" alt="CURREN 9015">
+                    <div class="card-body text-center">
+                        <h6 class="product-text">CURREN 9015 Women's Strainless Steel Watch</h6>
+                        <p class="product-price-new">Rs.3,499.00</p>
+                        <p class="product-desc">Stylish and durable timepieces for both casual and formal looks.</p>
+                    </div>
+                    <div class="card-buttons">
+                        <button type="button" class="add-to-cart-btn"
+                            onclick="addToCart('CURREN 9015 Women\'s Strainless Steel Watch',3499,'images/watch 12.jpg',3499)">Add
+                            to Cart</button>
+                        <button type="button" class="more-info-btn"
+                            onclick="openModal('CURREN 9015 Women\'s Strainless Steel Watch','images/watch 12.jpg',3499,'Rose','Slim polished design','PDF/summer1.pdf')"
+                            data-bs-toggle="modal" data-bs-target="#cardModal">More Info</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="modal fade" id="cardModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="cardModalTitle"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body text-center">
+
+                    <!-- Product Image -->
+                    <img id="cardModalImg" src="" alt="" class="img-fluid mb-3">
+
+                    <!-- Product Info -->
+                    <div class="text-center fw-bold px-3">
+
+                        <p class="mb-1">
+                            <strong>Price:</strong>
+                            <span id="cardModalPrice"></span>
+                        </p>
+
+                        <p class="mb-1">
+                            <strong>Color:</strong>
+                            <span id="cardModalColor"></span>
+                        </p>
+
+                        <p class="mb-3">
+                            <strong>Description:</strong>
+                            <span id="cardModalDesc"></span>
+                        </p>
+
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="modal-footer d-flex justify-content-center">
+                        <a href="#" id="modalActionBtn" class="btn btn-primary">
+                            <i class="fas fa-download"></i> Download PDF
+                        </a>
+
+                        <button id="modalCompareBtn" class="btn btn-primary w-50 ms-2">
+                            Compare Product
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Start Footer Section -->
+    <footer class="footer mt-3">
+        <div class="footer-section py-5" style="background:#f6f6f6;">
+            <div class="container">
+                <div class="row gy-4">
+
+                    <!-- Support -->
+                    <div class="col-6 col-md-3">
+                        <h6 class="footer-title">CONTACT US</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="about.html" class="footer-link"><i
+                                        class="fa-solid fa-location-dot me-2"></i>Karachi, Pakistan</a></li>
+                            <li><a href="about.html" class="footer-link"><i
+                                        class="fa-solid fa-location-dot me-2"></i>Karachi, Pakistan</a></li>
+                            <li><a href="tel:+92 300 1234567" class="footer-link"><i
+                                        class="fa-solid fa-phone me-2"></i>+92 300 1234567</a></li>
+                            <li><a href="mailto:velora@gmail.com" class="footer-link"><i
+                                        class="fa-solid fa-envelope me-2"></i>velora@gmail.com</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Information -->
+                    <div class="col-6 col-md-3">
+                        <h6 class="footer-title">INFORMATION</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html" class="footer-link">Home</a></li>
+                            <li><a href="men.html" class="footer-link">Mens</a></li>
+                            <li><a href="women.html" class="footer-link">Womens</a></li>
+                            <li><a href="kids.html" class="footer-link">Kids</a></li>
+                            <li><a href="winter.html" class="footer-link">Winter Dresses</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Customer Care -->
+                    <div class="col-6 col-md-3">
+                        <h6 class="footer-title">CUSTOMER CARE</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="about.html" class="footer-link">About Us</a></li>
+                            <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+                            <li><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+                            <li><a href="faqs.html" class="footer-link">FAQ's</a></li>
+                            <li><a href="shipping.html" class="footer-link">Shipping and Handling</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="col-12 col-md-3">
+                        <h6 class="footer-title">Newsletter Signup</h6>
+                        <p class="small color-secondary mb-2">Subscribe to our newsletter and get latest
+                            updates.</p>
+
+                        <form class="d-flex" onsubmit="event.preventDefault(); alert('Thanks for subscribing!');">
+                            <input type="email" class="form-control w-55" placeholder="Email address" aria-label="Email"
+                                required>
+                            <button class="btn btn-subscribe" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <hr class="my-4">
+                <div class="row d-flex text-align-center align-items-center justify-content-between">
+                    <!-- Copyright Message-->
+                    <div class="col-12 col-lg-4 col-md-4 small text-dark text-center text-md-start"
+                        style="font-size: 12px;">
+                        &copy; <span id="year"></span> Copyright © 2025 VELORA. All rights reserved.
+                    </div>
+
+                    <!-- Social icons  -->
+                    <div class="col-12 col-lg-6 col-md-6 d-flex justify-content-between ">
+                        <div class="d-flex align-items-center gap-3 mb-2">
+                            <a href="https://www.instagram.com/velora" target="_blank" class="social-icon"
+                                aria-label="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+                            <a href="https://www.facebook.com/velora" target="_blank" class="social-icon"
+                                aria-label="Facebook"><i class="fab fa-facebook-f fa-lg"></i></a>
+                            <a href="https://www.twitter.com/velora" target="_blank" class="social-icon"
+                                aria-label="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
+                        </div>
+                        <!-- Credit Card Icons -->
+                        <div class="d-flex align-items-center gap-3 mb-2 me-2">
+                            <i class="fab fa-cc-visa fa-2x card-icon" aria-hidden="true" title="Visa"></i>
+                            <i class="fab fa-cc-mastercard fa-2x card-icon" aria-hidden="true" title="Mastercard"></i>
+                            <i class="fab fa-cc-paypal fa-2x card-icon" aria-hidden="true" title="PayPal"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="bootstrap-5.3.8-dist/jquery-3.7.1.min.js"></script>
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>VELORA: Online Fashion & Clothing Store For Men, Women & Kids</title>
+    <meta charset="UTF-8">
+    <!-- META -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Websites KeyWords -->
+    <meta name="keywords"
+        content="online clothing store,online fashion store,fashion clothing online,premium clothing brand,buy clothes online,trendy fashion store,modern clothing brand">
+    <!-- Websites Description-->
+    <meta name="description"
+        content="VELORA is a premium online fashion store offering trendy clothing for men, women and kids. Shop modern styles, high quality outfits and fashion accessories at affordable prices.">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/E-Project Favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Your Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Start Header Section -->
+    <header id="header_start" class="container-fluid d-flex align-items-center justify-content-between">
+        <div class="flex-grow-1 text-center text-truncate">
+            <p id="slideText_Header" class="text-white mb-0">
+                Free Shipping on all orders over 5000 🇵🇰.
+                <a href="index.html" class="sale-link">Shop Now →</a>
+            </p>
+        </div>
+        <button id="closeHeader-button" class="btn btn-sm text-white ms-3">&times; close</button>
+    </header>
+    <!-- Header Section End -->
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- Navigation Section Start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+        <div class="container-fluid position-relative">
+            <!-- Toggler Button (Mobile Screen)-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Brand / Logo Pic  -->
+            <a class="navbar-brand mx-auto d-flex align-items-center order-2 order-lg-0" href="index.html"
+                aria-label="VELORA home">
+                <img src="./images/E-Project Logo.png" alt="VELORA Logo" width="100%" height="100%" class="img-fluid">
+            </a>
+
+            <!--Right side icons-->
+            <!-- (1)Account Icons -->
+            <div class="d-flex align-items-center gap-2 order-3 me-2 icons-right">
+                <a class="text-muted-account" href="account.html" title="Account" aria-label="Account"
+                    id="nav-link-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-person" viewBox="0 0 16 16">
+                        <path
+                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                    </svg>
+                </a>
+
+
+                <!-- (2)Search Bar Icon -->
+
+                <a class="text-muted nav-link-icon" href="#" title="Search" aria-label="Search" id="searchToggle"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    </svg></a>
+
+                <!-- (3) Add to Cart Icon -->
+                <div class="cart-icon" data-bs-toggle="offcanvas" data-bs-target="#cartCanvas" id="add_to_cart">
+                    🛒 <span id="cartCount" class="cart-badge">0</span>
+                </div>
+            </div>
+
+            <!-- Desktop Navbar -->
+            <div class="collapse navbar-collapse d-none d-lg-flex justify-content-center" id="mainNav">
+                <ul class="navbar-nav">
+                    <!-- EXAMPLE: MEN dropdown (split) -->
+                    <li class="nav-item dropdown px-1">
+                        <!-- main link - navigates -->
+                        <a class="nav-link" href="men.html">MENS</a>
+                        <!-- split toggle - opens dropdown only -->
+                        <button class="nav-link dropdown-toggle dropdown-toggle-split" id="menDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false" aria-label="Open MENS menu"></button>
+
+                        <ul class="dropdown-menu" aria-labelledby="menDropdown">
+                            <li><a class="dropdown-item" href="men-eastern wear.html">Eastern Wear</a></li>
+                            <li><a class="dropdown-item" href="mens-western wear.html">Western Wear</a></li>
+                            <li><a class="dropdown-item" href="mens-wedding.html">Wedding / Formal Wear</a></li>
+                            <li><a class="dropdown-item" href="mens-winter wear.html">Winter Wear</a></li>
+                            <li><a class="dropdown-item" href="mens-accessories.html">Accessories</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- WOMENS -->
+                    <li class="nav-item dropdown px-1">
+                        <a class="nav-link" href="wedding.html">WOMENS</a>
+                        <button class="nav-link dropdown-toggle dropdown-toggle-split" id="womenDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false" aria-label="Open WOMENS menu"></button>
+                        <ul class="dropdown-menu" aria-labelledby="womenDropdown">
+                            <li><a class="dropdown-item" href="summer.html">Summer Wear</a></li>
+                            <li><a class="dropdown-item" href="winter.html">Winter Wear</a></li>
+                            <li><a class="dropdown-item" href="watches.html">Watches</a></li>
+                            <li><a class="dropdown-item" href="jewellery.html">Jewellery</a></li>
+                            <li><a class="dropdown-item" href="fragrances.html">Fragrances</a></li>
+                            <li><a class="dropdown-item" href="wedding.html">Wedding Wear</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- KIDS -->
+                    <li class="nav-item dropdown px-1">
+                        <a class="nav-link" href="baby.html">KIDS</a>
+                        <button class="nav-link dropdown-toggle dropdown-toggle-split" id="kidsDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false" aria-label="Open KIDS menu"></button>
+                        <ul class="dropdown-menu" aria-labelledby="kidsDropdown">
+                            <li><a class="dropdown-item" href="boys.html">Boys</a></li>
+                            <li><a class="dropdown-item" href="girls.html">Girls</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- HOME -->
+                    <li class="nav-item dropdown px-1">
+                        <a class="nav-link active" href="bedding.html" aria-current="page">HOME</a>
+                        <button class="nav-link dropdown-toggle dropdown-toggle-split" id="homeDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false" aria-label="Open HOME menu"></button>
+                        <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+                            <li><a class="dropdown-item" href="bedding.html">Bedding</a></li>
+                            <li><a class="dropdown-item" href="decor.html">Decor</a></li>
+                            <li><a class="dropdown-item" href="kitchen.html">Kitchen</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item px-2"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item px-2"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item px-2"><a class="nav-link" href="compare.html">Compare Product🆚</a></li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Mobile Offcanvas Menu -->
+    <nav class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="men.html" data-bs-toggle="dropdown">MENS</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="men-eastern wear.html">Eastern Wear</a></li>
+                        <li><a class="dropdown-item" href="mens-western wear.html">Western Wear</a></li>
+                        <li><a class="dropdown-item" href="mens-wedding.html">Wedding / Formal Wear</a></li>
+                        <li><a class="dropdown-item" href="mens-winter wear.html">Winter Wear</a></li>
+                        <li><a class="dropdown-item" href="mens-accessories.html">Accessories</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="wedding.html" data-bs-toggle="dropdown">WOMENS</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="summer.html">Summer Wear</a></li>
+                        <li><a class="dropdown-item" href="winter.html">Winter Wear</a></li>
+                        <li><a class="dropdown-item" href="watches.html">Watches</a></li>
+                        <li><a class="dropdown-item" href="jewellery.html">Jewellery</a></li>
+                        <li><a class="dropdown-item" href="fragrances.html">Fragrances</a></li>
+                        <li><a class="dropdown-item" href="wedding.html">Wedding Wear</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="baby.html" data-bs-toggle="dropdown">KIDS</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="boys.html">Boys</a></li>
+                        <li><a class="dropdown-item" href="girls.html">Girls</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="bedding.html" data-bs-toggle="dropdown">HOME</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="bedding.html">Bedding</a></li>
+                        <li><a class="dropdown-item" href="decor.html">Decor</a></li>
+                        <li><a class="dropdown-item" href="kitchen.html">Kitchen</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="compare.html">Compare Product🆚</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Hidden Search Bar -->
+    <!-- SEARCH DROPDOWN-->
+    <search id="searchDropdown" class="search-dropdown bg-white border-bottom">
+        <div class="container d-flex align-items-center py-2 py-sm-1">
+
+            <!-- Search Icon -->
+            <span class="search-icon me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-search text-muted" viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                </svg>
+            </span>
+
+            <!-- Search Input -->
+            <input type="text" id="productSearch" placeholder="Search products..." class="form-control">
+            <!-- Close Button -->
+            <span id="closeSearch-button" class="ms-auto " style="cursor:pointer;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                    class="bi bi-x-lg text-muted" viewBox="0 0 16 16">
+                    <path
+                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                </svg>
+            </span>
+
+        </div>
+    </search>
+
+    <!-- Start Right Side Add to Cart ============================== -->
+    <!-- CART OFFCANVAS (RIGHT SIDE) -->
+    <aside class="offcanvas offcanvas-end p-3" tabindex="-1" id="cartCanvas">
+        <div class="d-flex justify-content-between">
+            <h4>Your Cart</h4>
+            <button class="btn btn-sm text-danger ms-3 fw-bold " id="closeCheckout-btn" data-bs-dismiss="offcanvas">
+                &times;<span class="ms-1 d-none d-sm-inline">Close</span>
+            </button>
+        </div>
+        <hr>
+        <div id="cartItems"></div>
+        <h5 class="mt-3">Total: Rs <span id="totalPrice">0</span></h5>
+        <button class="btn btn-primary w-100 mt-3" data-bs-toggle="offcanvas" data-bs-target="#checkoutCanvas">
+            Checkout
+        </button>
+    </aside>
+    <!-- CHECKOUT OFFCANVAS -->
+    <aside class="offcanvas offcanvas-end p-3" tabindex="-1" id="checkoutCanvas">
+        <div class="d-flex justify-content-between align-items-center">
+            <h4>Checkout</h4>
+            <button class="btn btn-sm text-danger ms-3 fw-bold " id="closeCheckout-btn" data-bs-dismiss="offcanvas">
+                &times;<span class="ms-1 d-none d-sm-inline">Close</span>
+            </button>
+        </div>
+        <hr>
+        <input class="form-control mb-2" placeholder="Full Name" required>
+        <input class="form-control mb-2" placeholder="Phone Number" required>
+        <input class="form-control mb-2" placeholder="Email Address" required>
+        <input class="form-control mb-2" placeholder="Address" required>
+        <input class="form-control mb-2" placeholder="Apt, suite, unit, building (optional)">
+        <input class="form-control mb-2" placeholder="City Name" required>
+        <button class="order-btn w-100 mt-2" id="placeOrderBtn">
+            Place Order
+        </button>
+        <div id="thankyou" class="thankyou-box">
+            ✅ Thank you! Your order has been placed successfully.
+        </div>
+    </aside>
+    <!-- NAVIGATION SECTION END  -->
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- Start Hero Section -->
+    <section class="container-fluid mens-clothing-section">
+        <aside class="container d-flex justify-content-between align-items-center mt-3">
+            <h2 class="section-title text-center mt-3">Fragrances</h2>
+            <div class="dropdown">
+                <button id="sort-dropdown" type="button" class="dropdown-toggle shorting-btn" data-bs-toggle="dropdown"
+                    aria-expanded="false">Sort By</button>
+                <ul class="dropdown-menu" id="sortMenu">
+                    <li><a class="dropdown-item" href="#" data-sort="featured">Featured</a></li>
+                    <li><a class="dropdown-item" href="#" data-sort="best">Best selling</a></li>
+                    <li><a class="dropdown-item" href="#" data-sort="az">Alphabetically, A-Z</a></li>
+                    <li><a class="dropdown-item" href="#" data-sort="za">Alphabetically, Z-A</a></li>
+                    <li><a class="dropdown-item" href="#" data-sort="low">Price, low to high</a></li>
+                    <li><a class="dropdown-item" href="#" data-sort="high">Price, high to low</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="row g-2" id="products">
+            <!-- PRODUCT 1 -->
+            <div class="col-6 col-md-3 item" data-name="RASPBERRY NOIR" data-price="16000">
+                <div class="product-card">
+                    <span class="discount-Percentage">-49%</span>
+                    <span class="New-item-badge">New</span>
+                    <img src="images/perfume 1.jpg" class="card-img-top-product" alt="RASPBERRY NOIR">
+                    <div class="card-body text-center">
+                        <h6 class="product-text">RASPBERRY NOIR</h6>
+                        <div class="price d-flex justify-content-center gap-2">
+                            <p class="product-price-old text-decoration-line-through">PKR 31,000.00</p>
+                            <p class="product-price-new fw-bold">PKR 16,000.00</p>
+                        </div>
+                        <p class="product-desc">Long-lasting, refreshing scent — elegant for daily & evening wear.</p>
+                    </div>
+                    <div class="card-buttons d-flex justify-content-center gap-2 mb-2">
+                        <button class="add-to-cart-btn btn btn-primary"
+                            onclick="addToCart('RASPBERRY NOIR',16000,'images/perfume 1.jpg')">Add to Cart</button>
+                        <button class="more-info-btn btn btn-outline-secondary"
+                            onclick="openModal('RASPBERRY NOIR','images/perfume 1.jpg',16000,'Unisex','Long-lasting, refreshing scent — elegant for daily & evening wear.','PDF/perfume.pdf')"
+                            data-bs-toggle="modal" data-bs-target="#cardModal">More Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 2 -->
+            <div class="col-6 col-md-3 item" data-name="THE DUTCHESS POUR FEMME" data-price="4000">
+                <div class="product-card">
+                    <span class="discount-Percentage">-20%</span>
+                    <img src="images/perfume 2.jpg" class="card-img-top-product" alt="THE DUTCHESS POUR FEMME">
+                    <div class="card-body text-center">
+                        <h6 class="product-text">THE DUTCHESS POUR FEMME</h6>
+                        <div class="price d-flex justify-content-center gap-2">
+                            <p class="product-price-old text-decoration-line-through">PKR 5,000.00</p>
+                            <p class="product-price-new fw-bold">PKR 4,000.00</p>
+                        </div>
+                        <p class="product-desc">Floral & powdery bouquet — classic feminine fragrance.</p>
+                    </div>
+                    <div class="card-buttons d-flex justify-content-center gap-2 mb-2">
+                        <button class="add-to-cart-btn btn btn-primary"
+                            onclick="addToCart('THE DUTCHESS POUR FEMME',4000,'images/perfume 2.jpg')">Add to
+                            Cart</button>
+                        <button class="more-info-btn btn btn-outline-secondary"
+                            onclick="openModal('THE DUTCHESS POUR FEMME','images/perfume 2.jpg',4000,'Feminine','Floral & powdery bouquet — classic feminine fragrance.','PDF/perfume.pdf')"
+                            data-bs-toggle="modal" data-bs-target="#cardModal">More Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 3 -->
+            <div class="col-6 col-md-3 item" data-name="WASIM AKRAM 502 FOR HER" data-price="6100">
+                <div class="product-card">
+                    <span class="discount-Percentage">-35%</span>
+                    <span class="New-item-badge">New</span>
+                    <img src="images/perfume 3.jpg" class="card-img-top-product" alt="WASIM AKRAM 502 FOR HER">
+                    <div class="card-body text-center">
+                        <h6 class="product-text">WASIM AKRAM 502 FOR HER</h6>
+                        <div class="price d-flex justify-content-center gap-2">
+                            <p class="product-price-old text-decoration-line-through">PKR 9,400.00</p>
+                            <p class="product-price-new fw-bold">PKR 6,100.00</p>
+                        </div>
+                        <p class="product-desc">Soft floral top with warm woody base — feminine and long-lasting.</p>
+                    </div>
+                    <div class="card-buttons d-flex justify-content-center gap-2 mb-2">
+                        <button class="add-to-cart-btn btn btn-primary"
+                            onclick="addToCart('WASIM AKRAM 502 FOR HER',6100,'images/perfume 3.jpg')">Add to
+                            Cart</button>
+                        <button class="more-info-btn btn btn-outline-secondary"
+                            onclick="openModal('WASIM AKRAM 502 FOR HER','images/perfume 3.jpg',6100,'For Her','Soft floral top with warm woody base — feminine and long-lasting.','PDF/perfume.pdf')"
+                            data-bs-toggle="modal" data-bs-target="#cardModal">More Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 4 -->
+            <div class="col-6 col-md-3 item" data-name="CLASSIQUE POUR FEMME" data-price="6700">
+                <div class="product-card">
+                    <span class="discount-Percentage">-25%</span>
+                    <img src="images/perfume 4.jpg" class="card-img-top-product" alt="CLASSIQUE POUR FEMME">
+                    <div class="card-body text-center">
+                        <h6 class="product-text">CLASSIQUE POUR FEMME</h6>
+                        <div class="price d-flex justify-content-center gap-2">
+                            <p class="product-price-old text-decoration-line-through">PKR 8,900.00</p>
+                            <p class="product-price-new fw-bold">PKR 6,700.00</p>
+                        </div>
+                        <p class="product-desc">Timeless oriental-floral with sophisticated sillage.</p>
+                    </div>
+                    <div class="card-buttons d-flex justify-content-center gap-2 mb-2">
+                        <button class="add-to-cart-btn btn btn-primary"
+                            onclick="addToCart('CLASSIQUE POUR FEMME',6700,'images/perfume 4.jpg')">Add to Cart</button>
+                        <button class="more-info-btn btn btn-outline-secondary"
+                            onclick="openModal('CLASSIQUE POUR FEMME','images/perfume 4.jpg',6700,'Feminine','Timeless oriental-floral with sophisticated sillage.','PDF/perfume.pdf')"
+                            data-bs-toggle="modal" data-bs-target="#cardModal">More Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 5 -->
+            <div class="col-6 col-md-3 item" data-name="LILIANE Pour Femme" data-price="6200">
+                <div class="product-card">
+                    <span class="discount-Percentage">-30%</span>
+                    <img src="images/perfume 5.jpg" class="card-img-top-product" alt="LILIANE Pour Femme">
+                    <div class="card-body text-center">
+                        <h6 class="product-text">LILIANE Pour Femme</h6>
+                        <div class="price d-flex justify-content-center gap-2">
+                            <p class="product-price-old text-decoration-line-through">PKR 8,900.00</p>
+                            <p class="product-price-new fw-bold">PKR 6,200.00</p>
+                        </div>
+                        <p class="product-desc">Fresh citrus opening with soft musky drydown.</p>
+                    </div>
+                    <div class="card-buttons d-flex justify-content-center gap-2 mb-2">
+                        <button class="add-to-cart-btn btn btn-primary"
+                            onclick="addToCart('LILIANE Pour Femme',6200,'images/perfume 5.jpg')">Add to Cart</button>
+                        <button class="more-info-btn btn btn-outline-secondary"
+                            onclick="openModal('LILIANE Pour Femme','images/perfume 5.jpg',6200,'Feminine','Fresh citrus opening with soft musky drydown.','PDF/perfume.pdf')"
+                            data-bs-toggle="modal" data-bs-target="#cardModal">More Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 6 -->
+            <div class="col-6 col-md-3 item" data-name="BLOSSOM" data-price="3400">
+                <div class="product-card">
+                    <span class="discount-Percentage">-15%</span>
+                    <img src="images/perfume 6.jpg" class="card-img-top-product" alt="BLOSSOM">
+                    <div class="card-body text-center">
+                        <h6 class="product-text">BLOSSOM</h6>
+                        <div class="price d-flex justify-content-center gap-2">
+                            <p class="product-price-old text-decoration-line-through">PKR 4,000.00</p>
+                            <p class="product-price-new fw-bold">PKR 3,400.00</p>
+                        </div>
+                        <p class="product-desc">Light floral — perfect for everyday freshness.</p>
+                    </div>
+                    <div class="card-buttons d-flex justify-content-center gap-2 mb-2">
+                        <button class="add-to-cart-btn btn btn-primary"
+                            onclick="addToCart('BLOSSOM',3400,'images/perfume 6.jpg')">Add to Cart</button>
+                        <button class="more-info-btn btn btn-outline-secondary"
+                            onclick="openModal('BLOSSOM','images/perfume 6.jpg',3400,'Floral','Light floral — perfect for everyday freshness.','PDF/perfume.pdf')"
+                            data-bs-toggle="modal" data-bs-target="#cardModal">More Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 7 -->
+            <div class="col-6 col-md-3 item" data-name="KOMAL" data-price="4400">
+                <div class="product-card">
+                    <span class="discount-Percentage">-10%</span>
+                    <span class="New-item-badge">New</span>
+                    <img src="images/perfume 7.jpg" class="card-img-top-product" alt="KOMAL">
+                    <div class="card-body text-center">
+                        <h6 class="product-text">KOMAL</h6>
+                        <div class="price d-flex justify-content-center gap-2">
+                            <p class="product-price-old text-decoration-line-through">PKR 4,900.00</p>
+                            <p class="product-price-new fw-bold">PKR 4,400.00</p>
+                        </div>
+                        <p class="product-desc">Soft oriental fragrance with warm amber notes.</p>
+                    </div>
+                    <div class="card-buttons d-flex justify-content-center gap-2 mb-2">
+                        <button class="add-to-cart-btn btn btn-primary"
+                            onclick="addToCart('KOMAL',4400,'images/perfume 7.jpg')">Add to Cart</button>
+                        <button class="more-info-btn btn btn-outline-secondary"
+                            onclick="openModal('KOMAL','images/perfume 7.jpg',4400,'Unisex','Soft oriental fragrance with warm amber notes.','PDF/perfume.pdf')"
+                            data-bs-toggle="modal" data-bs-target="#cardModal">More Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 8 -->
+            <div class="col-6 col-md-3 item" data-name="JANAN POUR FEMME" data-price="6800">
+                <div class="product-card">
+                    <span class="discount-Percentage">-20%</span>
+                    <img src="images/perfume 8.jpg" class="card-img-top-product" alt="JANAN POUR FEMME">
+                    <div class="card-body text-center">
+                        <h6 class="product-text">JANAN POUR FEMME</h6>
+                        <div class="price d-flex justify-content-center gap-2">
+                            <p class="product-price-old text-decoration-line-through">PKR 8,500.00</p>
+                            <p class="product-price-new fw-bold">PKR 6,800.00</p>
+                        </div>
+                        <p class="product-desc">Romantic floral heart with elegant musk base.</p>
+                    </div>
+                    <div class="card-buttons d-flex justify-content-center gap-2 mb-2">
+                        <button class="add-to-cart-btn btn btn-primary"
+                            onclick="addToCart('JANAN POUR FEMME',6800,'images/perfume 8.jpg')">Add to Cart</button>
+                        <button class="more-info-btn btn btn-outline-secondary"
+                            onclick="openModal('JANAN POUR FEMME','images/perfume 8.jpg',6800,'Feminine','Romantic floral heart with elegant musk base.','PDF/perfume.pdf')"
+                            data-bs-toggle="modal" data-bs-target="#cardModal">More Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 9 -->
+            <div class="col-6 col-md-3 item" data-name="J. POUR FEMME - 30ml" data-price="1900">
+                <div class="product-card">
+                    <span class="discount-Percentage">-5%</span>
+                    <img src="images/perfume 9.jpg" class="card-img-top-product" alt="J. POUR FEMME - 30ml">
+                    <div class="card-body text-center">
+                        <h6 class="product-text">J. POUR FEMME - 30ml</h6>
+                        <div class="price d-flex justify-content-center gap-2">
+                            <p class="product-price-old text-decoration-line-through">PKR 2,000.00</p>
+                            <p class="product-price-new fw-bold">PKR 1,900.00</p>
+                        </div>
+                        <p class="product-desc">Compact 30ml — perfect travel size with lively fragrance.</p>
+                    </div>
+                    <div class="card-buttons d-flex justify-content-center gap-2 mb-2">
+                        <button class="add-to-cart-btn btn btn-primary"
+                            onclick="addToCart('J. POUR FEMME - 30ml',1900,'images/perfume 9.jpg')">Add to Cart</button>
+                        <button class="more-info-btn btn btn-outline-secondary"
+                            onclick="openModal('J. POUR FEMME - 30ml','images/perfume 9.jpg',1900,'Feminine','Compact 30ml — perfect travel size with lively fragrance.','PDF/perfume.pdf')"
+                            data-bs-toggle="modal" data-bs-target="#cardModal">More Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 10 -->
+            <div class="col-6 col-md-3 item" data-name="MARJAAN" data-price="2800">
+                <div class="product-card">
+                    <span class="discount-Percentage">-12%</span>
+                    <img src="images/perfume 10.jpg" class="card-img-top-product" alt="MARJAAN">
+                    <div class="card-body text-center">
+                        <h6 class="product-text">MARJAAN</h6>
+                        <div class="price d-flex justify-content-center gap-2">
+                            <p class="product-price-old text-decoration-line-through">PKR 3,200.00</p>
+                            <p class="product-price-new fw-bold">PKR 2,800.00</p>
+                        </div>
+                        <p class="product-desc">Crisp & modern — light daytime perfume.</p>
+                    </div>
+                    <div class="card-buttons d-flex justify-content-center gap-2 mb-2">
+                        <button class="add-to-cart-btn btn btn-primary"
+                            onclick="addToCart('MARJAAN',2800,'images/perfume 10.jpg')">Add to Cart</button>
+                        <button class="more-info-btn btn btn-outline-secondary"
+                            onclick="openModal('MARJAAN','images/perfume 10.jpg',2800,'Unisex','Crisp & modern — light daytime perfume.','PDF/perfume.pdf')"
+                            data-bs-toggle="modal" data-bs-target="#cardModal">More Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 11 -->
+            <div class="col-6 col-md-3 item" data-name="BLOOM - 30ml" data-price="1900">
+                <div class="product-card">
+                    <span class="discount-Percentage">-5%</span>
+                    <img src="images/perfume 11.jpg" class="card-img-top-product" alt="BLOOM - 30ml">
+                    <div class="card-body text-center">
+                        <h6 class="product-text">BLOOM - 30ml</h6>
+                        <div class="price d-flex justify-content-center gap-2">
+                            <p class="product-price-old text-decoration-line-through">PKR 2,000.00</p>
+                            <p class="product-price-new fw-bold">PKR 1,900.00</p>
+                        </div>
+                        <p class="product-desc">Delicate floral — compact and travel-friendly.</p>
+                    </div>
+                    <div class="card-buttons d-flex justify-content-center gap-2 mb-2">
+                        <button class="add-to-cart-btn btn btn-primary"
+                            onclick="addToCart('BLOOM - 30ml',1900,'images/perfume 11.jpg')">Add to Cart</button>
+                        <button class="more-info-btn btn btn-outline-secondary"
+                            onclick="openModal('BLOOM - 30ml','images/perfume 11.jpg',1900,'Feminine','Delicate floral — compact and travel-friendly.','PDF/perfume.pdf')"
+                            data-bs-toggle="modal" data-bs-target="#cardModal">More Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 12 -->
+            <div class="col-6 col-md-3 item" data-name="AZBAH" data-price="2800">
+                <div class="product-card">
+                    <span class="discount-Percentage">-16%</span>
+                    <span class="New-item-badge">New</span>
+                    <img src="images/perfume 12.jpg" class="card-img-top-product" alt="AZBAH">
+                    <div class="card-body text-center">
+                        <h6 class="product-text">AZBAH</h6>
+                        <div class="price d-flex justify-content-center gap-2">
+                            <p class="product-price-old text-decoration-line-through">PKR 3,300.00</p>
+                            <p class="product-price-new fw-bold">PKR 2,800.00</p>
+                        </div>
+                        <p class="product-desc">Warm spicy-floral composition — great for evenings.</p>
+                    </div>
+                    <div class="card-buttons d-flex justify-content-center gap-2 mb-2">
+                        <button class="add-to-cart-btn btn btn-primary"
+                            onclick="addToCart('AZBAH',2800,'images/perfume 12.jpg')">Add to Cart</button>
+                        <button class="more-info-btn btn btn-outline-secondary"
+                            onclick="openModal('AZBAH','images/perfume 12.jpg',2800,'Unisex','Warm spicy-floral composition — great for evenings.')"
+                            data-bs-toggle="modal" data-bs-target="#cardModal">More Info</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Model  -->
+    <section class="modal fade" id="cardModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="cardModalTitle"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body text-center">
+
+                    <!-- Product Image -->
+                    <img id="cardModalImg" src="" alt="" class="img-fluid mb-3">
+
+                    <!-- Product Info -->
+                    <div class="text-center fw-bold px-3">
+
+                        <p class="mb-1">
+                            <strong>Price:</strong>
+                            <span id="cardModalPrice"></span>
+                        </p>
+
+                        <p class="mb-1">
+                            <strong>Color:</strong>
+                            <span id="cardModalColor"></span>
+                        </p>
+
+                        <p class="mb-3">
+                            <strong>Description:</strong>
+                            <span id="cardModalDesc"></span>
+                        </p>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="modal-footer d-flex justify-content-center">
+                        <a href="#" id="modalActionBtn" class="btn btn-danger w-20">
+                            <i class="fas fa-download"></i> Download PDF
+                        </a>
+
+                        <button id="modalCompareBtn" class="btn btn-primary w-50 ms-2">
+                            Compare Product
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Start Footer Section -->
+    <footer class="footer mt-3">
+        <div class="footer-section py-5" style="background:#f6f6f6;">
+            <div class="container">
+                <div class="row gy-4">
+
+                    <!-- Support -->
+                    <div class="col-6 col-md-3">
+                        <h6 class="footer-title">CONTACT US</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="about.html" class="footer-link"><i
+                                        class="fa-solid fa-location-dot me-2"></i>Karachi, Pakistan</a></li>
+                            <li><a href="about.html" class="footer-link"><i
+                                        class="fa-solid fa-location-dot me-2"></i>Karachi, Pakistan</a></li>
+                            <li><a href="tel:+92 300 1234567" class="footer-link"><i
+                                        class="fa-solid fa-phone me-2"></i>+92 300 1234567</a></li>
+                            <li><a href="mailto:velora@gmail.com" class="footer-link"><i
+                                        class="fa-solid fa-envelope me-2"></i>velora@gmail.com</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Information -->
+                    <div class="col-6 col-md-3">
+                        <h6 class="footer-title">INFORMATION</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html" class="footer-link">Home</a></li>
+                            <li><a href="men.html" class="footer-link">Mens</a></li>
+                            <li><a href="women.html" class="footer-link">Womens</a></li>
+                            <li><a href="kids.html" class="footer-link">Kids</a></li>
+                            <li><a href="winter.html" class="footer-link">Winter Dresses</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Customer Care -->
+                    <div class="col-6 col-md-3">
+                        <h6 class="footer-title">CUSTOMER CARE</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="about.html" class="footer-link">About Us</a></li>
+                            <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+                            <li><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+                            <li><a href="faqs.html" class="footer-link">FAQ's</a></li>
+                            <li><a href="shipping.html" class="footer-link">Shipping and Handling</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="col-12 col-md-3">
+                        <h6 class="footer-title">Newsletter Signup</h6>
+                        <p class="small color-secondary mb-2">Subscribe to our newsletter and get latest
+                            updates.</p>
+
+                        <form class="d-flex" onsubmit="event.preventDefault(); alert('Thanks for subscribing!');">
+                            <input type="email" class="form-control w-55" placeholder="Email address" aria-label="Email"
+                                required>
+                            <button class="btn btn-subscribe" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <hr class="my-4">
+                <div class="row d-flex text-align-center align-items-center justify-content-between">
+                    <!-- Copyright Message-->
+                    <div class="col-12 col-lg-4 col-md-4 small text-dark text-center text-md-start"
+                        style="font-size: 12px;">
+                        &copy; <span id="year"></span> Copyright © 2025 VELORA. All rights reserved.
+                    </div>
+
+                    <!-- Social icons  -->
+                    <div class="col-12 col-lg-6 col-md-6 d-flex justify-content-between ">
+                        <div class="d-flex align-items-center gap-3 mb-2">
+                            <a href="https://www.instagram.com/velora" target="_blank" class="social-icon"
+                                aria-label="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+                            <a href="https://www.facebook.com/velora" target="_blank" class="social-icon"
+                                aria-label="Facebook"><i class="fab fa-facebook-f fa-lg"></i></a>
+                            <a href="https://www.twitter.com/velora" target="_blank" class="social-icon"
+                                aria-label="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
+                        </div>
+                        <!-- Credit Card Icons -->
+                        <div class="d-flex align-items-center gap-3 mb-2 me-2">
+                            <i class="fab fa-cc-visa fa-2x card-icon" aria-hidden="true" title="Visa"></i>
+                            <i class="fab fa-cc-mastercard fa-2x card-icon" aria-hidden="true" title="Mastercard"></i>
+                            <i class="fab fa-cc-paypal fa-2x card-icon" aria-hidden="true" title="PayPal"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="bootstrap-5.3.8-dist/jquery-3.7.1.min.js"></script>
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

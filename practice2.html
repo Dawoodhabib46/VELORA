@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Header Close Test</title>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="col-6 col-md-3 item" data-name="Footwear" data-price="2500" data-sold="1000">
+        <div class="product-card">
+            <span class="discount-Percentage">-39%</span>
+            <img src="pdf/canon cal cat.pdf" class="card-img-top-product" height="500px">
+            <div class="card-body text-center">
+                <h5 class="product-text">Kurta Corner - Leather Sandal 003 - Chocolate Brown </h5>
+                <div class="price d-flex justify-content-center gap-2">
+                    <p class="product-price-old text-decoration-line-through">Rs. 4500</p>
+                    <p class="product-price-new fw-bold">Rs. 2500</p>
+                </div>
+                <!-- Example Add to Cart (you already have) -->
+                <button class="add-to-cart-btn"
+                    onclick="addToCart('SOLO FASHION SHOES Sanford - Brn MEN COLLECTION',4800,'images/Footwear_Shoes7.png')">
+                    Add to Cart
+                </button>
+
+                <!-- More Info button (for modal) - give each product its own data-pdf -->
+                <button class="btn btn-outline-secondary more-info-btn" data-bs-toggle="modal"
+                    data-bs-target="#cardModal" data-title="LEATHER PESHAWARI CHAPPAL - PAHARI-002 BLACK"
+                    data-img="images/Footwear_Shoes8.png" data-pdf="pdfs/peshawari-pahari-002-black.pdf">
+                    More Info
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="cardModal" tabindex="-1" aria-labelledby="cardModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cardModalLabel">Title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="cardModalImg" src="" alt="" class="img-fluid modal-product-img">
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <a href="#" id="modalActionBtn" class="btn btn-primary" download>
+                        <i class="fas fa-download"></i> Download PDF
+                    </a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // --- CONFIG: adjust your login page URL here ---
+        const LOGIN_PAGE = '/login.html'; // change to your real login URL
+
+        // Utility: check if user is logged in
+        function isUserLoggedIn() {
+            // Simple example: check localStorage. Replace with your actual auth check.
+            // e.g. return Boolean(localStorage.getItem('authToken'));
+            return Boolean(localStorage.getItem('userLoggedIn'));
+        }
+
+        // Helper: get URL param
+        function getUrlParam(name) {
+            const params = new URLSearchParams(window.location.search);
+            return params.get(name);
+        }
+
+        // 1) Populate modal when shown
+        const cardModal = document.getElementById('cardModal');
+        cardModal.addEventListener('show.bs.modal', function (event) {
+            const button = event.relatedTarget; // button that triggered the modal
+            const title = button.getAttribute('data-title') || 'Product';
+            const img = button.getAttribute('data-img') || '';
+            const pdf = button.getAttribute('data-pdf') || '';
+
+            // fill modal elements
+            document.getElementById('cardModalLabel').textContent = title;
+            const imgEl = document.getElementById('cardModalImg');
+            imgEl.src = img;
+            imgEl.alt = title;
+
+            const actionBtn = document.getElementById('modalActionBtn');
+            actionBtn.dataset.pdf = pdf; // store pdf on the button for later
+            // set href for convenience (won't auto-download if auth needed)
+            actionBtn.href = pdf || '#';
+        });
+
+        // 2) Handle click on modal Download button
+        document.getElementById('modalActionBtn').addEventListener('click', function (e) {
+            const pdf = this.dataset.pdf;
+            if (!pdf) {
+                e.preventDefault();
+                alert('PDF not available for this product.');
+                return;
+            }
+
+            if (!isUserLoggedIn()) {
+                // Not logged in -> redirect to login and pass pdf to download after login
+                e.preventDefault();
+                const encoded = encodeURIComponent(pdf);
+                // include current page as return (optional) and the pdf path
+                const returnUrl = encodeURIComponent(window.location.href.split('?')[0]);
+                window.location.href = `${LOGIN_PAGE}?return=${returnUrl}&download=${encoded}`;
+                return;
+            }
+
+            // Logged in -> allow download. Browser will download when clicking an <a download> with href
+            // If you want to force open in new tab instead:
+            // window.open(pdf, '_blank');
+            // No need to preventDefault (anchor has href), but ensure `download` attribute is present on anchor.
+        });
+
+        // 3) On page load: if we came back after login with download param, start download automatically
+        window.addEventListener('DOMContentLoaded', function () {
+            const pdfToDownload = getUrlParam('download');
+            if (pdfToDownload) {
+                // If not logged in yet (edge case) don't attempt
+                if (!isUserLoggedIn()) {
+                    // optionally show message
+                    // you might prefer to store the param in sessionStorage on login page after successful login
+                    console.warn('User not logged in — cannot auto-download.');
+                    return;
+                }
+
+                const decoded = decodeURIComponent(pdfToDownload);
+                // Create temporary link to trigger download
+                const a = document.createElement('a');
+                a.href = decoded;
+                // suggest filename (optional)
+                a.download = decoded.split('/').pop();
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
+
+                // Remove the query params from URL for cleanliness (no reload)
+                const url = new URL(window.location);
+                url.searchParams.delete('download');
+                url.searchParams.delete('return');
+                window.history.replaceState({}, document.title, url.pathname + url.search);
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>

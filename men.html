@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>VELORA: Online Fashion & Clothing Store For Men, Women & Kids</title>
+    <meta charset="UTF-8">
+    <!-- META -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Websites KeyWords -->
+    <meta name="keywords"
+        content="men clothing online,men fashion store,stylish men clothes,men shirts online,men jeans online,menswear fashion">
+    <!-- Websites Description-->
+    <meta name="description"
+        content="VELORA is a premium online fashion store offering trendy clothing for men, women and kids. Shop modern styles, high quality outfits and fashion accessories at affordable prices.">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/E-Project Favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Your Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Start Header Section -->
+    <header id="header_start" class="container-fluid d-flex align-items-center justify-content-between">
+        <div class="flex-grow-1 text-center text-truncate">
+            <p id="slideText_Header" class="text-white mb-0">
+                Free Shipping on all orders over 5000 🇵🇰.
+                <a href="index.html" class="sale-link">Shop Now →</a>
+            </p>
+        </div>
+        <button id="closeHeader-button" class="btn btn-sm text-white ms-3">&times; close</button>
+    </header>
+    <!-- Header Section End -->
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- Navigation Section Start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+        <div class="container-fluid position-relative">
+            <!-- Toggler Button (Mobile Screen)-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Brand / Logo Pic  -->
+            <a class="navbar-brand mx-auto d-flex align-items-center order-2 order-lg-0" href="index.html"
+                aria-label="VELORA home">
+                <img src="./images/E-Project Logo.png" alt="VELORA Logo" width="100%" height="100%" class="img-fluid">
+            </a>
+
+            <!--Right side icons-->
+            <!-- (1)Account Icons -->
+            <div class="d-flex align-items-center gap-2 order-3 me-2 icons-right">
+                <a class="text-muted-account" href="account.html" title="Account" aria-label="Account"
+                    id="nav-link-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-person" viewBox="0 0 16 16">
+                        <path
+                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                    </svg>
+                </a>
+
+
+                <!-- (2)Search Bar Icon -->
+
+                <a class="text-muted nav-link-icon" href="#" title="Search" aria-label="Search" id="searchToggle"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    </svg></a>
+
+                <!-- (3) Add to Cart Icon -->
+                <div class="cart-icon" data-bs-toggle="offcanvas" data-bs-target="#cartCanvas" id="add_to_cart">
+                    🛒 <span id="cartCount" class="cart-badge">0</span>
+                </div>
+            </div>
+
+            <!-- Desktop Navbar -->
+            <div class="collapse navbar-collapse d-none d-lg-flex justify-content-center" id="mainNav">
+                <ul class="navbar-nav">
+                    <!-- EXAMPLE: MEN dropdown (split) -->
+                    <li class="nav-item dropdown px-1">
+                        <!-- main link - navigates -->
+                        <a class="nav-link" href="men.html">MENS</a>
+                        <!-- split toggle - opens dropdown only -->
+                        <button class="nav-link dropdown-toggle dropdown-toggle-split" id="menDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false" aria-label="Open MENS menu"></button>
+
+                        <ul class="dropdown-menu" aria-labelledby="menDropdown">
+                            <li><a class="dropdown-item" href="men-eastern wear.html">Eastern Wear</a></li>
+                            <li><a class="dropdown-item" href="mens-western wear.html">Western Wear</a></li>
+                            <li><a class="dropdown-item" href="mens-wedding.html">Wedding / Formal Wear</a></li>
+                            <li><a class="dropdown-item" href="mens-winter wear.html">Winter Wear</a></li>
+                            <li><a class="dropdown-item" href="mens-accessories.html">Accessories</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- WOMENS -->
+                    <li class="nav-item dropdown px-1">
+                        <a class="nav-link" href="wedding.html">WOMENS</a>
+                        <button class="nav-link dropdown-toggle dropdown-toggle-split" id="womenDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false" aria-label="Open WOMENS menu"></button>
+                        <ul class="dropdown-menu" aria-labelledby="womenDropdown">
+                            <li><a class="dropdown-item" href="summer.html">Summer Wear</a></li>
+                            <li><a class="dropdown-item" href="winter.html">Winter Wear</a></li>
+                            <li><a class="dropdown-item" href="watches.html">Watches</a></li>
+                            <li><a class="dropdown-item" href="jewellery.html">Jewellery</a></li>
+                            <li><a class="dropdown-item" href="fragrances.html">Fragrances</a></li>
+                            <li><a class="dropdown-item" href="wedding.html">Wedding Wear</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- KIDS -->
+                    <li class="nav-item dropdown px-1">
+                        <a class="nav-link" href="baby.html">KIDS</a>
+                        <button class="nav-link dropdown-toggle dropdown-toggle-split" id="kidsDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false" aria-label="Open KIDS menu"></button>
+                        <ul class="dropdown-menu" aria-labelledby="kidsDropdown">
+                            <li><a class="dropdown-item" href="boys.html">Boys</a></li>
+                            <li><a class="dropdown-item" href="girls.html">Girls</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- HOME -->
+                    <li class="nav-item dropdown px-1">
+                        <a class="nav-link active" href="bedding.html" aria-current="page">HOME</a>
+                        <button class="nav-link dropdown-toggle dropdown-toggle-split" id="homeDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false" aria-label="Open HOME menu"></button>
+                        <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+                            <li><a class="dropdown-item" href="bedding.html">Bedding</a></li>
+                            <li><a class="dropdown-item" href="decor.html">Decor</a></li>
+                            <li><a class="dropdown-item" href="kitchen.html">Kitchen</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item px-2"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item px-2"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item px-2"><a class="nav-link" href="compare.html">Compare Product🆚</a></li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Mobile Offcanvas Menu -->
+    <nav class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="men.html" data-bs-toggle="dropdown">MENS</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="men-eastern wear.html">Eastern Wear</a></li>
+                        <li><a class="dropdown-item" href="mens-western wear.html">Western Wear</a></li>
+                        <li><a class="dropdown-item" href="mens-wedding.html">Wedding / Formal Wear</a></li>
+                        <li><a class="dropdown-item" href="mens-winter wear.html">Winter Wear</a></li>
+                        <li><a class="dropdown-item" href="mens-accessories.html">Accessories</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="wedding.html" data-bs-toggle="dropdown">WOMENS</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="summer.html">Summer Wear</a></li>
+                        <li><a class="dropdown-item" href="winter.html">Winter Wear</a></li>
+                        <li><a class="dropdown-item" href="watches.html">Watches</a></li>
+                        <li><a class="dropdown-item" href="jewellery.html">Jewellery</a></li>
+                        <li><a class="dropdown-item" href="fragrances.html">Fragrances</a></li>
+                        <li><a class="dropdown-item" href="wedding.html">Wedding Wear</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="baby.html" data-bs-toggle="dropdown">KIDS</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="boys.html">Boys</a></li>
+                        <li><a class="dropdown-item" href="girls.html">Girls</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="bedding.html" data-bs-toggle="dropdown">HOME</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="bedding.html">Bedding</a></li>
+                        <li><a class="dropdown-item" href="decor.html">Decor</a></li>
+                        <li><a class="dropdown-item" href="kitchen.html">Kitchen</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="compare.html">Compare Product🆚</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Hidden Search Bar -->
+    <!-- SEARCH DROPDOWN-->
+    <search id="searchDropdown" class="search-dropdown bg-white border-bottom">
+        <div class="container d-flex align-items-center py-2 py-sm-1">
+
+            <!-- Search Icon -->
+            <span class="search-icon me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-search text-muted" viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                </svg>
+            </span>
+
+            <!-- Search Input -->
+            <input type="text" id="productSearch" placeholder="Search products..." class="form-control">
+            <!-- Close Button -->
+            <span id="closeSearch-button" class="ms-auto " style="cursor:pointer;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                    class="bi bi-x-lg text-muted" viewBox="0 0 16 16">
+                    <path
+                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                </svg>
+            </span>
+
+        </div>
+    </search>
+
+    <!-- Start Right Side Add to Cart ============================== -->
+    <!-- CART OFFCANVAS (RIGHT SIDE) -->
+    <aside class="offcanvas offcanvas-end p-3" tabindex="-1" id="cartCanvas">
+        <div class="d-flex justify-content-between">
+            <h4>Your Cart</h4>
+            <button class="btn btn-sm text-danger ms-3 fw-bold " id="closeCheckout-btn" data-bs-dismiss="offcanvas">
+                &times;<span class="ms-1 d-none d-sm-inline">Close</span>
+            </button>
+        </div>
+        <hr>
+        <div id="cartItems"></div>
+        <h5 class="mt-3">Total: Rs <span id="totalPrice">0</span></h5>
+        <button class="btn btn-primary w-100 mt-3" data-bs-toggle="offcanvas" data-bs-target="#checkoutCanvas">
+            Checkout
+        </button>
+    </aside>
+    <!-- CHECKOUT OFFCANVAS -->
+    <aside class="offcanvas offcanvas-end p-3" tabindex="-1" id="checkoutCanvas">
+        <div class="d-flex justify-content-between align-items-center">
+            <h4>Checkout</h4>
+            <button class="btn btn-sm text-danger ms-3 fw-bold " id="closeCheckout-btn" data-bs-dismiss="offcanvas">
+                &times;<span class="ms-1 d-none d-sm-inline">Close</span>
+            </button>
+        </div>
+        <hr>
+        <input class="form-control mb-2" placeholder="Full Name" required>
+        <input class="form-control mb-2" placeholder="Phone Number" required>
+        <input class="form-control mb-2" placeholder="Email Address" required>
+        <input class="form-control mb-2" placeholder="Address" required>
+        <input class="form-control mb-2" placeholder="Apt, suite, unit, building (optional)">
+        <input class="form-control mb-2" placeholder="City Name" required>
+        <button class="order-btn w-100 mt-2" id="placeOrderBtn">
+            Place Order
+        </button>
+        <div id="thankyou" class="thankyou-box">
+            ✅ Thank you! Your order has been placed successfully.
+        </div>
+    </aside>
+    <!-- NAVIGATION SECTION END  -->
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- Start Hero Section -->
+
+    <!-- Slide Two Banners -->
+    <section id="Carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <img src="images/Men_Slide 2 (1).png" class="d-block w-100" alt="Slide 1">
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <img src="images/Men_Slide 2 (2).png" class="d-block w-100" alt="Slide 2">
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <img src="images/Men_Slide 2 (3).png" class="d-block w-100" alt="Slide 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#Carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#Carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </section>
+
+    <!-- MENS Section Cards -->
+    <main id="mens-section" class="py-1">
+        <section class="container">
+            <!-- Short and Filter Button End -->
+
+            <!-- Cards Collection Start -->
+            <div class="collections-section container">
+                <div class="collections-track" role="list" aria-label="Men collections">
+                    <!-- Card 1 -->
+                    <div class="card-item" role="listitem">
+                        <div class="collection-card">
+                            <a href="#Eastern" class="d-block img-wrap"><img src="images/Card-Kurta-shalwar.png"
+                                    alt="Eastern Wear"></a>
+                            <div class="card-body">
+                                <h5 class="card-title">Eastern Wear</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card-item" role="listitem">
+                        <div class="collection-card">
+                            <a href="#Western" class="d-block img-wrap"><img src="images/Card-Western.png"
+                                    alt="Western Wear"></a>
+                            <div class="card-body">
+                                <h5 class="card-title">Western Wear</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="card-item" role="listitem">
+                        <div class="collection-card">
+                            <a href="#Wedding" class="d-block img-wrap"><img src="images/Card Wedding Wear.png"
+                                    alt="Wedding Wear"></a>
+                            <div class="card-body">
+                                <h5 class="card-title">Wedding Wear</h5>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="card-item" role="listitem">
+                        <div class="collection-card">
+                            <a href="#Winter" class="d-block img-wrap"><img src="images/Card Winter Wear.png"
+                                    alt="Winter Wear"></a>
+                            <div class="card-body">
+                                <h5 class="card-title">Winter Wear</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="card-item" role="listitem">
+                        <div class="collection-card">
+                            <a href="#Accessories" class="d-block img-wrap"><img src="images/Card-Accessory.png"
+                                    alt="Accessories"></a>
+                            <div class="card-body">
+                                <h5 class="card-title">Accessories</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Start Products Section 1 ======================================================= -->
+        <!-- Mens Eastern -->
+        <section class="container-fluid mens-clothing-section" id="product-section-start">
+            <h1 class="section-title text-center mt-3">Eastern Brands</h1>
+            <div class="row g-2">
+                <!-- PRODUCT 1 -->
+                <div class="col-6 col-md-3 item" data-name="Muraqsh White Kurta" data-price="5900" data-sold="500">
+                    <div class="product-card">
+                        <span class="discount-Percentage">-49%</span>
+                        <span class="New-item-badge">New</span>
+                        <img src="images/Men-Clothpro1.png" class="card-img-top-product" alt="Muraqsh White Kurta">
+                        <div class="card-body text-center">
+                            <h5 class="product-text">Muraqsh. White color Kurta Trouser/Shalwar Men-Collection</h5>
+                            <div class="price d-flex justify-content-center gap-2">
+                                <p class="product-price-old text-decoration-line-through">Rs. 48,999</p>
+                                <p class="product-price-new fw-bold">Rs. 5,900</p>
+                            </div>
+                        </div>
+                        <div class="card-buttons">
+                            <button class="add-to-cart-btn btn btn-primary"
+                                onclick="addToCart('Muraqsh White Kurta Trouser/Shalwar',5900,'images/Men-Clothpro1.png')">Add
+                                to Cart</button>
+                            <button class="more-info-btn btn btn-outline-secondary"
+                                onclick="openModal('Muraqsh White Kurta Trouser/Shalwar','images/Men-Clothpro1.png',5900,'White','Premium cotton, soft fabric','PDF/men eastern wear.pdf')"
+                                data-bs-toggle="modal" data-bs-target="#cardModal">More Info</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col-6 col-md-3 item" data-name="Muraqsh Crow Black Kurta" data-price="32999"
+                    data-sold="500">
+                    <div class="product-card">
+                        <span class="discount-Percentage">-49%</span>
+                        <span class="New-item-badge">New</span>
+                        <img src="images/Men-Clothpro2.png" class="card-img-top-product" alt="Crow Black Kurta">
+                        <div class="card-body text-center">
+                            <h5 class="product-text">Muraqsh. Crow Black Kurta Trouser/Shalwar Men-Collection</h5>
+                            <div class="price d-flex justify-content-center">
+                                <p class="product-price-old text-decoration-line-through">Rs. 48,999</p>
+                                <p class="product-price-new fw-bold">Rs. 32,999</p>
+                            </div>
+                        </div>
+                        <div class="card-buttons">
+                            <button class="add-to-cart-btn btn btn-primary"
+                                onclick="addToCart('Muraqsh Crow Black Kurta Trouser/Shalwar',32999,'images/Men-Clothpro2.png')">Add
+                                to Cart</button>
+                            <button class="more-info-btn btn btn-outline-secondary"
+                                onclick="openModal('Muraqsh Crow Black Kurta Trouser/Shalwar','images/Men-Clothpro2.png',32999,'Black','Premium soft cotton - Elegant black kurta','PDF/men eastern wear.pdf')"
+                                data-bs-toggle="modal" data-bs-target="#cardModal">More Info</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col-6 col-md-3 item" data-name="Murghas Formal Black" data-price="7900" data-sold="1000">
+                    <div class="product-card">
+                        <span class="discount-Percentage">-39%</span>
+                        <img src="images/Men-Clothpro9.png" class="card-img-top-product" alt="Murghas Formal Black">
+                        <div class="card-body text-center">
+                            <h5 class="product-text">Murghas. Formal Black Kurta Shalwar - Embroidered</h5>
+                            <div class="price d-flex justify-content-center gap-2">
+                                <p class="product-price-old text-decoration-line-through">Rs. 9,500</p>
+                                <p class="product-price-new fw-bold">Rs. 7,900</p>
+                            </div>
+                        </div>
+                        <div class="card-buttons">
+                            <button class="add-to-cart-btn btn btn-primary"
+                                onclick="addToCart('Murghas Formal Black Kurta Shalwar',7900,'images/Men-Clothpro9.png')">Add
+                                to Cart</button>
+                            <button class="more-info-btn btn btn-outline-secondary"
+                                onclick="openModal('Murghas Formal Black Kurta Shalwar','images/Men-Clothpro9.png',7900,'Black','Formal embroidered kurta','PDF/men eastern wear.pdf')"
+                                data-bs-toggle="modal" data-bs-target="#cardModal">More Info</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="col-6 col-md-3 item" data-name="Muraqsh Army Green" data-price="12500" data-sold="600">
+                    <div class="product-card">
+                        <span class="discount-Percentage">-21%</span>
+                        <img src="images/Men-Clothpro10.jpg" class="card-img-top-product" alt="Army Green Kurta">
+                        <div class="card-body text-center">
+                            <h5 class="product-text">Muraqsh. Army Green Embroidered Cotton Kurta Trouser - Men</h5>
+                            <div class="price d-flex justify-content-center gap-2">
+                                <p class="product-price-old text-decoration-line-through">Rs. 15,900</p>
+                                <p class="product-price-new fw-bold">Rs. 12,500</p>
+                            </div>
+                        </div>
+                        <div class="card-buttons">
+                            <button class="add-to-cart-btn btn btn-primary"
+                                onclick="addToCart('Muraqsh Army Green Embroidered Kurta',12500,'images/Men-Clothpro10.jpg')">Add
+                                to Cart</button>
+                            <button class="more-info-btn btn btn-outline-secondary"
+                                onclick="openModal('Muraqsh Army Green Embroidered Kurta','images/Men-Clothpro10.jpg',12500,'Green','Army green embroidered kurta','PDF/men eastern wear.pdf')"
+                                data-bs-toggle="modal" data-bs-target="#cardModal">More Info</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 5 -->
+                <div class="col-6 col-md-3 item" data-name="Dark Black Kurta 3PC" data-price="25000" data-sold="1200">
+                    <div class="product-card">
+                        <span class="discount-Percentage">-45%</span>
+                        <img src="images/Men-Clothpro3.png" class="card-img-top-product" alt="Dark Black 3PC">
+                        <div class="card-body text-center">
+                            <h5 class="product-text">Dark Black Kurta Shalwar with Suiting Waistcoat - 3PC</h5>
+                            <div class="price d-flex justify-content-center gap-2">
+                                <p class="product-price-old text-decoration-line-through">Rs. 29,900</p>
+                                <p class="product-price-new fw-bold">Rs. 25,000</p>
+                            </div>
+                        </div>
+                        <div class="card-buttons">
+                            <button class="add-to-cart-btn btn btn-primary"
+                                onclick="addToCart('Dark Black Kurta Shalwar with Waistcoat - 3PC',25000,'images/Men-Clothpro3.png')">Add
+                                to Cart</button>
+                            <button class="more-info-btn btn btn-outline-secondary"
+                                onclick="openModal('Dark Black Kurta Shalwar with Waistcoat - 3PC','images/Men-Clothpro3.png',25000,'Black','3-piece straight-cut suit with premium waistcoat','PDF/men eastern wear.pdf')"
+                                data-bs-toggle="modal" data-bs-target="#cardModal">More Info</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="col-6 col-md-3 item" data-name="Dark Brown Kurta 3PC" data-price="4500" data-sold="700">
+                    <div class="product-card">
+                        <span class="discount-Percentage">-35%</span>
+                        <img src="images/Men-Clothpro4.png" class="card-img-top-product" alt="Dark Brown 3PC">
+                        <div class="card-body text-center">
+                            <h5 class="product-text">Dark Brown Kurta Shalwar with Suiting Waistcoat - 3PC</h5>
+                            <div class="price d-flex justify-content-center gap-2">
+                                <p class="product-price-old text-decoration-line-through">Rs. 4,800</p>
+                                <p class="product-price-new fw-bold">Rs. 4,500</p>
+                            </div>
+                        </div>
+                        <div class="card-buttons">
+                            <button class="add-to-cart-btn btn btn-primary"
+                                onclick="addToCart('Dark Brown Kurta Shalwar with Waistcoat - 3PC',4500,'images/Men-Clothpro4.png')">Add
+                                to Cart</button>
+                            <button class="more-info-btn btn btn-outline-secondary"
+                                onclick="openModal('Dark Brown Kurta Shalwar with Waistcoat - 3PC','images/Men-Clothpro4.png',4500,'Brown','Premium brown kurta with stylish waistcoat','PDF/men western wear.pdf')"
+                                data-bs-toggle="modal" data-bs-target="#cardModal">More Info</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 7 -->
+                <div class="col-6 col-md-3 item" data-name="Army Dark Brown Embroidered" data-price="15900"
+                    data-sold="300">
+                    <div class="product-card">
+                        <span class="discount-Percentage">-20%</span>
+                        <img src="images/Cloth_pro11 (2).png" class="card-img-top-product" alt="Army Dark Brown">
+                        <div class="card-body text-center">
+                            <h5 class="product-text">Army Dark Brown Embroidered Cotton Kurta Trouser - Men</h5>
+                            <div class="price d-flex justify-content-center gap-2">
+                                <p class="product-price-old text-decoration-line-through">Rs. 19,900</p>
+                                <p class="product-price-new fw-bold">Rs. 15,900</p>
+                            </div>
+                        </div>
+                        <div class="card-buttons">
+                            <button class="add-to-cart-btn btn btn-primary"
+                                onclick="addToCart('Army Dark Brown Embroidered Kurta',15900,'images/Cloth_pro11 (2).png')">Add
+                                to Cart</button>
+                            <button class="more-info-btn btn btn-outline-secondary"
+                                onclick="openModal('Army Dark Brown Embroidered Kurta','images/Cloth_pro11 (2).png',15900,'Brown','Premium embroidered kurta','PDF/men western wear.pdf')"
+                                data-bs-toggle="modal" data-bs-target="#cardModal">More Info</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="col-6 col-md-3 item" data-name="Arshad Trackpant Kurta" data-price="10000" data-sold="400">
+                    <div class="product-card">
+                        <span class="discount-Percentage">-16%</span>
+                        <img src="images/Men-Clothpro12.jpg" class="card-img-top-product" alt="Arshad Trackpant Kurta">
+                        <div class="card-body text-center">
+                            <h5 class="product-text">Arshad New Trackpant. Regular Fit Kurta Shalwar - Rust</h5>
+                            <div class="price d-flex justify-content-center gap-2">
+                                <p class="product-price-old text-decoration-line-through">Rs. 11,900</p>
+                                <p class="product-price-new fw-bold">Rs. 10,000</p>
+                            </div>
+                        </div>
+                        <div class="card-buttons">
+                            <button class="add-to-cart-btn btn btn-primary"
+                                onclick="addToCart('Arshad New Trackpant Kurta - Rust',10000,'images/Men-Clothpro12.jpg')">Add
+                                to Cart</button>
+                            <button class="more-info-btn btn btn-outline-secondary"
+                                onclick="openModal('Arshad New Trackpant Kurta - Rust','images/Men-Clothpro12.jpg',10000,'Rust','Regular fit kurta with trackpant style','PDF/men western wear.pdf')"
+                                data-bs-toggle="modal" data-bs-target="#cardModal">More Info</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mens Western Collection Products      /////////////////////////////////////////// -->
+        <section class="container-fluid mens-clothing-section mt-4">
+            <h1 class="section-title text-center mt-4">Find More - Western Brands</h1>
+            <div class="row g-2 mt-3">
+                <!-- PRODUCT 1 -->
+                <div class="col-6 col-md-3 item" data-name="T-Shirt" data-price="1300" data-sold="1000">
+                    <div class="product-card">
+                        <span class="discount-Percentage">-40%</span>
+                        <span class="New-item-badge">New</span>
+                        <img src="images/Men_Western-5.png" class="card-img-top-product" height="500px">
+                        <div class="card-body text-center">
+                            <h5 class="product-text">Floa. Men Sweatshirt LFT - 05 For Men Women Collection</h5>
+                            <div class="price d-flex justify-content-center gap-2">
+                                <p class="product-price-old text-decoration-line-through">Rs. 9500</p>
+                                <p class="product-price-new fw-bold">Rs. 1300</p>
+                            </div>
+                            <div class="card-buttons">
+                                <button class="add-to-cart-btn"
+                                    onclick="addToCart('Men Sweatshirt LFT - 05',1300,'images/Men_Western-5.png')">
+                                    Add to Cart
+                                </button>
+                                <button class="more-info-btn"
+                                    onclick="openModal(
+                                'Floa. Men Sweatshirt LFT - 05',
+                                'images/Men_Western-5.png', 1300, 'Blue',
+                                'Comfortable mens sweatshirt made from soft cotton. Perfect for winter.','PDF/men western wear.pdf')"
+                                    data-bs-toggle="modal" data-bs-target="#cardModal">
+                                    More Info
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 2 -->
+                <div class="col-6 col-md-3 item" data-name="Sweatshirt" data-price="1200" data-sold="600">
+                    <div class="product-card">
+                        <span class="discount-Percentage">-39%</span>
+                        <span class="New-item-badge">New</span>
+                        <img src="images/Men_Western-6.png" class="card-img-top-product" height="500px">
+                        <div class="card-body text-center">
+                            <h5 class="product-text">Muraqsh. Army Green Embroidered Cotton Kurta Trouser - Men</h5>
+                            <div class="price d-flex justify-content-center gap-2">
+                                <p class="product-price-old text-decoration-line-through">Rs. 1500</p>
+                                <p class="product-price-new fw-bold">Rs. 1200</p>
+                            </div>
+                            <div class="card-buttons">
+                                <button class="add-to-cart-btn"
+                                    onclick="addToCart('Men Sweatshirt LFT - 06',1200,'images/Men_Western-6.png')">
+                                    Add to Cart
+                                </button>
+                                <button class="more-info-btn"
+                                    onclick="openModal(
+                                    'Men Sweatshirt LFT - 06',
+                                    'images/Men_Western-6.png', 1200, 'Green',
+                                    'Premium cotton sweatshirt, breathable and soft on skin.','PDF/men western wear.pdf')" data-bs-toggle="modal"
+                                    data-bs-target="#cardModal">
+                                    More Info
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 3 -->
+                <div class="col-6 col-md-3 item" data-name="Sweatshirt" data-price="1200" data-sold="600">
+                    <div class="product-card">
+                        <span class="discount-Percentage">-39%</span>
+                        <span class="New-item-badge">New</span>
+                        <img src="images/Men_Western-7.jpg" class="card-img-top-product" height="500px">
+                        <div class="card-body text-center">
+                            <h5 class="product-text">Muraqsh. Army Green Embroidered Cotton Kurta Trouser - Men</h5>
+                            <div class="price d-flex justify-content-center gap-2">
+                                <p class="product-price-old text-decoration-line-through">Rs. 1500</p>
+                                <p class="product-price-new fw-bold">Rs. 1200</p>
+                            </div>
+                            <div class="card-buttons">
+                                <button class="add-to-cart-btn"
+                                    onclick="addToCart('Men Sweatshirt LFT - 07',1200,'images/Men_Western-7.jpg')">
+                                    Add to Cart
+                                </button>
+                                <button class="more-info-btn"
+                                    onclick="openModal(
+                                    'Men Sweatshirt LFT - 07',
+                                    'images/Men_Western-7.jpg', 1200, 'Olive',
+                                    'Stylish and comfortable sweatshirt for everyday wear.','PDF/men western wear.pdf')" data-bs-toggle="modal"
+                                    data-bs-target="#cardModal">
+                                    More Info
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 4 -->
+                <div class="col-6 col-md-3 item" data-name="Jeans" data-price="1300" data-sold="200">
+                    <div class="product-card">
+                        <span class="discount-Percentage">-39%</span>
+                        <span class="New-item-badge">New</span>
+                        <img src="images/Men_Western-8.jpg" class="card-img-top-product" height="500px">
+                        <div class="card-body text-center">
+                            <h5 class="product-text">Men Sweatshirt LFT - 03 For Best- Men Western Collection</h5>
+                            <div class="price d-flex justify-content-center gap-2">
+                                <p class="product-price-old text-decoration-line-through">Rs. 4980</p>
+                                <p class="product-price-new fw-bold">Rs. 1300</p>
+                            </div>
+                            <div class="card-buttons">
+                                <button class="add-to-cart-btn"
+                                    onclick="addToCart('Men Sweatshirt LFT - 08',1300,'images/Men_Western-8.jpg')">
+                                    Add to Cart
+                                </button>
+                                <button class="more-info-btn"
+                                    onclick="openModal(
+                                    'Men Sweatshirt LFT - 08',
+                                    'images/Men_Western-8.jpg', 1300, 'Blue',
+                                    'High-quality sweatshirt, soft fabric, perfect for casual style.','PDF/men western wear.pdf')"
+                                    data-bs-toggle="modal" data-bs-target="#cardModal">
+                                    More Info
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 5 -->
+                <div class="col-6 col-md-3 item" data-name="Jeans" data-price="1300" data-sold="200">
+                    <div class="product-card">
+                        <span class="discount-Percentage">-39%</span>
+                        <span class="New-item-badge">New</span>
+                        <img src="images/Men_Western-9.png" class="card-img-top-product" height="500px">
+                        <div class="card-body text-center">
+                            <h5 class="product-text">Men Sweatshirt LFT - 03 For Best- Men Western Collection</h5>
+                            <div class="price d-flex justify-content-center gap-2">
+                                <p class="product-price-old text-decoration-line-through">Rs. 4980</p>
+                                <p class="product-price-new fw-bold">Rs. 1300</p>
+                            </div>
+                            <div class="card-buttons">
+                                <button class="add-to-cart-btn"
+                                    onclick="addToCart('Men Sweatshirt LFT - 08',1300,'images/Men_Western-9.png')">
+                                    Add to Cart
+                                </button>
+                                <button class="more-info-btn"
+                                    onclick="openModal(
+                                    'Men Sweatshirt LFT - 09',
+                                    'images/Men_Western-9.png', 1300, 'Navy',
+                                    'Casual sweatshirt with modern design, warm and comfy.','PDF/men western wear.pdf')" data-bs-toggle="modal"
+                                    data-bs-target="#cardModal">
+                                    More Info
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 6 -->
+                <div class="col-6 col-md-3 item" data-name="Hood sweater" data-price="1300" data-sold="100">
+                    <div class="product-card">
+                        <span class="discount-Percentage">-49%</span>
+                        <span class="New-item-badge">New</span>
+                        <img src="images/Men_Western10.png" class="card-img-top-product">
+                        <div class="card-body text-center">
+                            <h5 class="product-text">Mens Basic Hood sweater - 2002/508 Men-Collection</h5>
+                            <div class="price d-flex justify-content-center gap-2">
+                                <p class="product-price-old text-decoration-line-through">Rs. 1700</p>
+                                <p class="product-price-new fw-bold">Rs. 1300</p>
+                            </div>
+                            <div class="card-buttons">
+                                <button class="add-to-cart-btn"
+                                    onclick="addToCart('Mens Basic Hood sweater - 2002/508',1300,'images/Men_Western10.png')">
+                                    Add to Cart
+                                </button>
+                                <button class="more-info-btn"
+                                    onclick="openModal(
+                                    'Mens Basic Hood sweater - 2002/508',
+                                    'images/Men_Western10.png', 1300, 'Black',
+                                    'Stylish hooded sweater, warm and perfect for casual wear.','PDF/men western wear.pdf')"
+                                    data-bs-toggle="modal" data-bs-target="#cardModal">
+                                    More Info
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- PRODUCT 7 -->
+                <div class="col-6 col-md-3 item" data-name="Sweatshirt" data-price="1000" data-sold="1200">
+                    <div class="product-card">
+                        <span class="discount-Percentage">-40%</span>
+                        <span class="New-item-badge">New</span>
+                        <img src="images/Men_Western-11.jpg" class="card-img-top-product" height="500px">
+                        <div class="card-body text-center">
+                            <h5 class="product-text">Flof. Men Sweatshirt LFT - 02 New Men Sweatshirt</h5>
+                            <div class="price d-flex justify-content-center gap-2">
+                                <p class="product-price-old text-decoration-line-through">Rs. 14999</p>
+                                <p class="product-price-new fw-bold">Rs. 1300</p>
+                            </div>
+                            <div class="card-buttons">
+                                <button class="add-to-cart-btn"
+                                    onclick="addToCart('Men Sweatshirt LFT - 02',1000,'images/Men_Western-11.jpg')">
+                                    Add to Cart
+                                </button>
+                                <button class="more-info-btn"
+                                    onclick="openModal(
+                                    'Flof. Men Sweatshirt LFT - 02',
+                                    'images/Men_Western-11.jpg', 1000, 'Gray',
+                                    'Soft cotton sweatshirt for everyday comfort and style.','PDF/men western wear.pdf')"
+                                    data-bs-target="#cardModal">
+                                    More Info
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 8 -->
+                <div class="col-6 col-md-3 item" data-name="Hood sweater" data-price="1300" data-sold="100">
+                    <div class="product-card">
+                        <span class="discount-Percentage">-49%</span>
+                        <span class="New-item-badge">New</span>
+                        <img src="images/Men_Western-12.jpg" class="card-img-top-product">
+                        <div class="card-body text-center">
+                            <h5 class="product-text">Mens Basic Hood sweater - 2002/508 Men-Collection</h5>
+                            <div class="price d-flex justify-content-center gap-2">
+                                <p class="product-price-old text-decoration-line-through">Rs. 1700</p>
+                                <p class="product-price-new fw-bold">Rs. 1300</p>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <div class="card-buttons">
+                                    <button class="add-to-cart-btn"
+                                        onclick="addToCart('Mens Basic Hood sweater - 2002/508',1300,'images/Men_Western-12.jpg')">
+                                        Add to Cart
+                                    </button>
+                                    <button class="more-info-btn"
+                                        onclick="openModal(
+                                    'Mens Basic Hood sweater - 2002/508',
+                                    'images/Men_Western-12.jpg', 1300, 'Black',
+                                    'Stylish hooded sweater, warm and perfect for casual wear.','PDF/men western wear.pdf')"
+                                        data-bs-toggle="modal" data-bs-target="#cardModal">
+                                        More Info
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Men Wedding Wear -->
+        <section class="container-fluid mens-clothing-section mt-4">
+            <h1 class="section-title text-center mt-3">Trending Products</h1>
+            <div class="row g-2 mb-4">
+                <!-- PRODUCT 1 -->
+                <div class="col-6 col-md-3 item" data-name="Sherwani" data-price="78000" data-sold="700">
+                    <div class="product-card">
+                        <span class="discount-Percentage">-8%</span>
+                        <span class="New-item-badge">New</span>
+                        <img src="images/men-weddingPro4.jpg" class="card-img-top-product" height="500px">
+                        <div class="card-body text-center">
+                            <h5 class="product-text">Black Velvet Sherwani with Golden Embroidery</h5>
+                            <div class="price d-flex justify-content-center gap-2">
+                                <p class="product-price-old text-decoration-line-through">Rs. 85000</p>
+                                <p class="product-price-new fw-bold">Rs. 78000</p>
+                            </div>
+                            <div class="card-buttons">
+                                <button class="add-to-cart-btn"
+                                    onclick="addToCart('Black Velvet Sherwani with Golden Embroidery',78000,'images/men-weddingPro4.jpg')">
+                                    Add to Cart
+                                </button>
+
+                                <button class="more-info-btn"
+                                    onclick="openModal(
+                                'Black Velvet Sherwani with Golden Embroidery',
+                                'images/men-weddingPro4.jpg', 78000, 'Black / Gold',
+                                'Premium velvet sherwani with contrast golden thread embroidery and velvet shawl option for evening events.','PDF/men wedding wear.pdf')"
+                                    data-bs-toggle="modal" data-bs-target="#cardModal">
+                                    More Info
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 2 -->
+                <div class="col-6 col-md-3 item" data-name="Kurta Waistcoat Set" data-price="64000" data-sold="600">
+                    <div class="product-card">
+                        <span class="discount-Percentage">-10%</span>
+                        <span class="New-item-badge">New</span>
+                        <img src="images/Men-WeddingPro6.png" class="card-img-top-product" height="500px">
+                        <div class="card-body text-center">
+                            <h5 class="product-text">Embroidered Kurta with Matching Waistcoat Set</h5>
+                            <div class="price d-flex justify-content-center gap-2">
+                                <p class="product-price-old text-decoration-line-through">Rs. 71000</p>
+                                <p class="product-price-new fw-bold">Rs. 64000</p>
+                            </div>
+                            <div class="card-buttons">
+                                <button class="add-to-cart-btn"
+                                    onclick="addToCart('Embroidered Kurta with Matching Waistcoat Set',64000,'images/Men-WeddingPro6.png')">
+                                    Add to Cart
+                                </button>
+
+                                <button class="more-info-btn"
+                                    onclick="openModal(
+                                'Embroidered Kurta with Matching Waistcoat Set',
+                                'images/Men-WeddingPro6.png', 64000, 'Olive / Gold',
+                                'Stylish kurta and waistcoat combo with delicate embroidery — great for close-family events and receptions.','PDF/men wedding wear.pdf')"
+                                    data-bs-toggle="modal" data-bs-target="#cardModal">
+                                    More Info
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 3 -->
+                <div class="col-6 col-md-3 item" data-name="Sherwani" data-price="79000" data-sold="600">
+                    <div class="product-card">
+                        <span class="discount-Percentage">-7%</span>
+                        <span class="New-item-badge">New</span>
+                        <img src="images/Men-WeddingPro7.jpg" class="card-img-top-product" height="500px">
+                        <div class="card-body text-center">
+                            <h5 class="product-text">Royal Blue Pakistani Sherwani with Handwork Embroidery</h5>
+                            <div class="price d-flex justify-content-center gap-2">
+                                <p class="product-price-old text-decoration-line-through">Rs. 85000</p>
+                                <p class="product-price-new fw-bold">Rs. 79000</p>
+                            </div>
+                            <div class="card-buttons">
+                                <button class="add-to-cart-btn"
+                                    onclick="addToCart('Royal Blue Pakistani Sherwani with Handwork Embroidery',79000,'images/Men-WeddingPro7.jpg')">
+                                    Add to Cart
+                                </button>
+
+                                <button class="more-info-btn"
+                                    onclick="openModal(
+                                'Royal Blue Pakistani Sherwani with Handwork Embroidery',
+                                'images/Men-WeddingPro7.jpg', 79000, 'Royal Blue / Silver',
+                                'Bold royal-blue sherwani with intricate handwork — a standout choice for grooms wanting traditional elegance.','PDF/men wedding wear.pdf')"
+                                    data-bs-toggle="modal" data-bs-target="#cardModal">
+                                    More Info
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 4 -->
+                <div class="col-6 col-md-3 item" data-name="Sherwani Set" data-price="76000" data-sold="200">
+                    <div class="product-card">
+                        <span class="discount-Percentage">-9%</span>
+                        <span class="New-item-badge">New</span>
+                        <img src="images/Men-WeddingPro8.jpg" class="card-img-top-product" height="500px">
+                        <div class="card-body text-center">
+                            <h5 class="product-text">Beige Color Sherwani with Detailed Embroidery Work</h5>
+                            <div class="price d-flex justify-content-center gap-2">
+                                <p class="product-price-old text-decoration-line-through">Rs. 84000</p>
+                                <p class="product-price-new fw-bold">Rs. 76000</p>
+                            </div>
+                            <div class="card-buttons">
+                                <button class="add-to-cart-btn"
+                                    onclick="addToCart('Beige Color Sherwani with Detailed Embroidery Work',76000,'images/Men-WeddingPro8.jpg')">
+                                    Add to Cart
+                                </button>
+                                <button class="more-info-btn"
+                                    onclick="openModal(
+                                'Beige Color Sherwani with Detailed Embroidery Work',
+                                'images/Men-WeddingPro8.jpg', 76000, 'Beige / Off-White',
+                                'Subtle beige sherwani with rich embroidery panels and matching dupatta option for classic looks.','PDF/men wedding wear.pdf')"
+                                    data-bs-toggle="modal" data-bs-target="#cardModal">
+                                    More Info
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="col-6 col-md-3 item" data-name="Hooded Jacket" data-price="7000" data-sold="100">
+                    <div class="product-card">
+                        <span class="discount-Percentage">-15%</span>
+                        <span class="New-item-badge">New</span>
+                        <img src="images/men-winterpro9.jpg" class="card-img-top-product">
+                        <div class="card-body text-center">
+                            <h5 class="product-text">Men's Fleece Hooded Jacket for Winter</h5>
+                            <div class="price d-flex justify-content-center gap-2">
+                                <p class="product-price-old text-decoration-line-through">Rs. 8200</p>
+                                <p class="product-price-new fw-bold">Rs. 7000</p>
+                            </div>
+                            <div class="card-buttons">
+                                <button class="add-to-cart-btn"
+                                    onclick="addToCart('Men\'s Fleece Hooded Jacket for Winter',7000,'images/men-winterpro9.jpg')">
+                                    Add to Cart
+                                </button>
+                                <button class="more-info-btn" onclick="openModal(
+                                'Men\'s Fleece Hooded Jacket for Winter',
+                                'images/men-winterpro9.jpg', 7000, 'Grey',
+                                'Comfortable fleece hooded jacket, perfect for winter.','PDF/men winter wear.pdf')"
+                                    data-bs-toggle="modal" data-bs-target="#cardModal">
+                                    More Info
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 6 -->
+                <div class="col-6 col-md-3 item" data-name="Winter Pullover" data-price="6500" data-sold="100">
+                    <div class="product-card">
+                        <span class="discount-Percentage">-10%</span>
+                        <span class="New-item-badge">New</span>
+                        <img src="images/men-winterpro10.jpg" class="card-img-top-product">
+                        <div class="card-body text-center">
+                            <h5 class="product-text">Men's Winter Pullover Hoodie - Charcoal</h5>
+                            <div class="price d-flex justify-content-center gap-2">
+                                <p class="product-price-old text-decoration-line-through">Rs. 7200</p>
+                                <p class="product-price-new fw-bold">Rs. 6500</p>
+                            </div>
+                            <div class="card-buttons">
+                                <button class="add-to-cart-btn"
+                                    onclick="addToCart('Men\'s Winter Pullover Hoodie - Charcoal',6500,'images/men-winterpro10.jpg')">
+                                    Add to Cart
+                                </button>
+                                <button class="more-info-btn" onclick="openModal(
+                                'Men\'s Winter Pullover Hoodie - Charcoal',
+                                'images/men-winterpro10.jpg', 6500, 'Charcoal',
+                                'Cozy pullover hoodie, ideal for winter days.','PDF/men winter wear.pdf')"
+                                    data-bs-toggle="modal" data-bs-target="#cardModal">
+                                    More Info
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 7 -->
+                <div class="col-6 col-md-3 item" data-name="Parka Jacket" data-price="9300" data-sold="1200">
+                    <div class="product-card">
+                        <span class="discount-Percentage">-8%</span>
+                        <span class="New-item-badge">New</span>
+                        <img src="images/men-winterpro11.jpg" class="card-img-top-product" height="500px">
+                        <div class="card-body text-center">
+                            <h5 class="product-text">Men's Insulated Parka Jacket - Black</h5>
+                            <div class="price d-flex justify-content-center gap-2">
+                                <p class="product-price-old text-decoration-line-through">Rs. 10100</p>
+                                <p class="product-price-new fw-bold">Rs. 9300</p>
+                            </div>
+                            <div class="card-buttons">
+                                <button class="add-to-cart-btn"
+                                    onclick="addToCart('Men\'s Insulated Parka Jacket - Black',9300,'images/men-winterpro11.jpg')">
+                                    Add to Cart
+                                </button>
+                                <button class="more-info-btn" onclick="openModal(
+                                'Men\'s Insulated Parka Jacket - Black',
+                                'images/men-winterpro11.jpg', 9300, 'Black',
+                                'Insulated parka jacket, perfect for cold weather.','PDF/men winter wear.pdf')"
+                                    data-bs-toggle="modal" data-bs-target="#cardModal">
+                                    More Info
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 8 -->
+                <div class="col-6 col-md-3 item" data-name="Winter Vest" data-price="5400" data-sold="700">
+                    <div class="product-card">
+                        <span class="discount-Percentage">-6%</span>
+                        <span class="New-item-badge">New</span>
+                        <img src="images/men-winterpro12.jpg" class="card-img-top-product" height="500px">
+                        <div class="card-body text-center">
+                            <h5 class="product-text">Men's Padded Winter Vest - Olive</h5>
+                            <div class="price d-flex justify-content-center gap-2">
+                                <p class="product-price-old text-decoration-line-through">Rs. 5800</p>
+                                <p class="product-price-new fw-bold">Rs. 5400</p>
+                            </div>
+                            <div class="card-buttons">
+                                <button class="add-to-cart-btn"
+                                    onclick="addToCart('Men\'s Padded Winter Vest - Olive',5400,'images/men-winterpro12.jpg')">
+                                    Add to Cart
+                                </button>
+                                <button class="more-info-btn" onclick="openModal(
+                                'Men\'s Padded Winter Vest - Olive',
+                                'images/men-winterpro12.jpg', 5400, 'Olive',
+                                'Padded winter vest, lightweight and warm.','PDF/men winter wear.pdf')"
+                                    data-bs-toggle="modal" data-bs-target="#cardModal">
+                                    More Info
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                 <div class="col-6 col-md-3 item" data-name="Embroidered Shawl" data-price="15000" data-sold="700">
+                <div class="product-card">
+                    <span class="discount-Percentage">-10%</span>
+                    <span class="New-item-badge">New</span>
+                    <img src="images/Accessories_Pro1.png" class="card-img-top-product" height="500px">
+                    <div class="card-body text-center">
+                        <h5 class="product-text">Embroidered Winter Shawl - Maroon</h5>
+                        <div class="price d-flex justify-content-center gap-2">
+                            <p class="product-price-old text-decoration-line-through">Rs. 16500</p>
+                            <p class="product-price-new fw-bold">Rs. 15000</p>
+                        </div>
+                        <div class="card-buttons">
+                            <button class="add-to-cart-btn"
+                                onclick="addToCart('Embroidered Winter Shawl - Maroon',15000,'images/Accessories_Pro1.png')">
+                                Add to Cart
+                            </button>
+                            <button class="more-info-btn"
+                                onclick="openModal(
+                                'Embroidered Winter Shawl - Maroon',
+                                'images/Accessories_Pro1.png', 15000, 'Maroon',
+                                'Embroidered winter shawl, warm and stylish for winters.','PDF/men Accessories  wear.pdf')"
+                                data-bs-toggle="modal" data-bs-target="#cardModal">
+                                More Info
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 10 -->
+            <div class="col-6 col-md-3 item" data-name="Cashmere Shawl" data-price="14000" data-sold="100">
+                <div class="product-card">
+                    <span class="discount-Percentage">-12%</span>
+                    <span class="New-item-badge">New</span>
+                    <img src="images/Accessories_Pro2.png" class="card-img-top-product">
+                    <div class="card-body text-center">
+                        <h5 class="product-text">Luxury Cashmere Shawl - Grey</h5>
+                        <div class="price d-flex justify-content-center gap-2">
+                            <p class="product-price-old text-decoration-line-through">Rs. 15800</p>
+                            <p class="product-price-new fw-bold">Rs. 14000</p>
+                        </div>
+                        <div class="card-buttons">
+                            <button class="add-to-cart-btn"
+                                onclick="addToCart('Luxury Cashmere Shawl - Grey',14000,'images/Accessories_Pro2.png')">
+                                Add to Cart
+                            </button>
+                            <button class="more-info-btn"
+                                onclick="openModal(
+                                'Luxury Cashmere Shawl - Grey',
+                                'images/Accessories_Pro2.png', 14000, 'Grey',
+                                'Premium cashmere shawl, soft and luxurious for cold days.','PDF/men Accessories  wear.pdf')"
+                                data-bs-toggle="modal" data-bs-target="#cardModal">
+                                More Info
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 11-->
+            <div class="col-6 col-md-3 item" data-name="Wool Scarf" data-price="9000" data-sold="120">
+                <div class="product-card">
+                    <span class="discount-Percentage">-8%</span>
+                    <span class="New-item-badge">New</span>
+                    <img src="images/Accessories_Pro3.png" class="card-img-top-product" height="500px">
+                    <div class="card-body text-center">
+                        <h5 class="product-text">Men's Wool Scarf - Dark Grey</h5>
+                        <div class="price d-flex justify-content-center gap-2">
+                            <p class="product-price-old text-decoration-line-through">Rs. 9800</p>
+                            <p class="product-price-new fw-bold">Rs. 9000</p>
+                        </div>
+                        <div class="card-buttons">
+                            <button class="add-to-cart-btn"
+                                onclick="addToCart('Men\'s Wool Scarf - Dark Grey',9000,'images/Accessories_Pro3.png')">
+                                Add to Cart
+                            </button>
+                            <button class="more-info-btn"
+                                onclick="openModal(
+                                'Men\'s Wool Scarf - Dark Grey',
+                                'images/Accessories_Pro3.png', 9000, 'Dark Grey',
+                                'Warm wool scarf for men, perfect for winter and outdoor use.','PDF/men Accessories  wear.pdf')"
+                                data-bs-toggle="modal" data-bs-target="#cardModal">
+                                More Info
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 12-->
+            <div class="col-6 col-md-3 item" data-name="Embroidered Shawl" data-price="15000" data-sold="700">
+                <div class="product-card">
+                    <span class="discount-Percentage">-10%</span>
+                    <span class="New-item-badge">New</span>
+                    <img src="images/Accessories_Pro4.jpg" class="card-img-top-product" height="500px">
+                    <div class="card-body text-center">
+                        <h5 class="product-text">Embroidered Winter Shawl - Maroon</h5>
+                        <div class="price d-flex justify-content-center gap-2">
+                            <p class="product-price-old text-decoration-line-through">Rs. 16500</p>
+                            <p class="product-price-new fw-bold">Rs. 15000</p>
+                        </div>
+                        <div class="card-buttons">
+                            <button class="add-to-cart-btn"
+                                onclick="addToCart('Embroidered Winter Shawl - Maroon',15000,'images/Accessories_Pro4.jpg')">
+                                Add to Cart
+                            </button>
+                            <button class="more-info-btn"
+                                onclick="openModal(
+                                'Embroidered Winter Shawl - Maroon',
+                                'images/Accessories_Pro4.jpg', 15000, 'Maroon',
+                                'Elegant embroidered shawl, perfect for winter occasions.','PDF/men Accessories  wear.pdf')"
+                                data-bs-toggle="modal" data-bs-target="#cardModal">
+                                More Info
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </section>
+
+        <!-- Men Page About -->
+        <article class="last-section mx-auto" style="max-width:1000px;">
+            <h1 class="display-5 mb-3 text-center">MEN</h1>
+            <p class="lead mb-0 text-start">
+                VELORA Mens Collection combines timeless craftsmanship with modern sophistication, offering style
+                that feels effortless in every moment. From crisp kurtas and tailored shirts to relaxed everyday
+                essentials,
+                each piece is crafted from premium fabrics with clean cuts and season-ready comfort. Designed for the
+                modern Pakistani man, this collection blends tradition with contemporary elegance — versatile pieces
+                that
+                match your routine, personality, and confidence.
+            </p>
+        </article>
+    </main>
+    <!-- Modals -->
+    <section class="modal fade" id="cardModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="cardModalTitle"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body text-center">
+
+                    <!-- Product Image -->
+                    <img id="cardModalImg" src="" alt="" class="img-fluid mb-3">
+
+                    <!-- Product Info -->
+                    <div class="text-center fw-bold px-3">
+
+                        <p class="mb-1">
+                            <strong>Price:</strong>
+                            <span id="cardModalPrice"></span>
+                        </p>
+
+                        <p class="mb-1">
+                            <strong>Color:</strong>
+                            <span id="cardModalColor"></span>
+                        </p>
+
+                        <p class="mb-3">
+                            <strong>Description:</strong>
+                            <span id="cardModalDesc"></span>
+                        </p>
+
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="modal-footer d-flex justify-content-center">
+                        <a href="#" id="modalActionBtn" class="btn btn-primary">
+                            <i class="fas fa-download"></i> Download PDF
+                        </a>
+
+                        <button id="modalCompareBtn" class="btn btn-primary w-50 ms-2">
+                            Compare Product
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section End -->
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- Start Footer Section -->
+    <footer class="footer mt-3">
+        <div class="footer-section py-5" style="background:#f6f6f6;">
+            <div class="container">
+                <div class="row gy-4">
+
+                    <!-- Support -->
+                    <div class="col-6 col-md-3">
+                        <h6 class="footer-title">CONTACT US</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="about.html" class="footer-link"><i
+                                        class="fa-solid fa-location-dot me-2"></i>Karachi, Pakistan</a></li>
+                            <li><a href="about.html" class="footer-link"><i
+                                        class="fa-solid fa-location-dot me-2"></i>Karachi, Pakistan</a></li>
+                            <li><a href="tel:+92 300 1234567" class="footer-link"><i
+                                        class="fa-solid fa-phone me-2"></i>+92 300 1234567</a></li>
+                            <li><a href="mailto:velora@gmail.com" class="footer-link"><i
+                                        class="fa-solid fa-envelope me-2"></i>velora@gmail.com</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Information -->
+                    <div class="col-6 col-md-3">
+                        <h6 class="footer-title">INFORMATION</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html" class="footer-link">Home</a></li>
+                            <li><a href="men.html" class="footer-link">Mens</a></li>
+                            <li><a href="women.html" class="footer-link">Womens</a></li>
+                            <li><a href="kids.html" class="footer-link">Kids</a></li>
+                            <li><a href="winter.html" class="footer-link">Winter Dresses</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Customer Care -->
+                    <div class="col-6 col-md-3">
+                        <h6 class="footer-title">CUSTOMER CARE</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="about.html" class="footer-link">About Us</a></li>
+                            <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+                            <li><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+                            <li><a href="faqs.html" class="footer-link">FAQ's</a></li>
+                            <li><a href="shipping.html" class="footer-link">Shipping and Handling</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="col-12 col-md-3">
+                        <h6 class="footer-title">Newsletter Signup</h6>
+                        <p class="small color-secondary mb-2">Subscribe to our newsletter and get latest updates.</p>
+
+                        <form class="d-flex" onsubmit="event.preventDefault(); alert('Thanks for subscribing!');">
+                            <input type="email" class="form-control w-55" placeholder="Email address" aria-label="Email"
+                                required>
+                            <button class="btn btn-subscribe" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <hr class="my-4">
+                <div class="row d-flex text-align-center align-items-center justify-content-between">
+                    <!-- Copyright Message-->
+                    <div class="col-12 col-lg-4 col-md-4 small text-dark text-center text-md-start"
+                        style="font-size: 12px;">
+                        &copy; <span id="year"></span> Copyright © 2025 VELORA. All rights reserved.
+                    </div>
+
+                    <!-- Social icons  -->
+                    <div class="col-12 col-lg-6 col-md-6 d-flex justify-content-between ">
+                        <div class="d-flex align-items-center gap-3 mb-2">
+                            <a href="https://www.instagram.com/velora" target="_blank" class="social-icon"
+                                aria-label="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+                            <a href="https://www.facebook.com/velora" target="_blank" class="social-icon"
+                                aria-label="Facebook"><i class="fab fa-facebook-f fa-lg"></i></a>
+                            <a href="https://www.twitter.com/velora" target="_blank" class="social-icon"
+                                aria-label="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
+                        </div>
+                        <!-- Credit Card Icons -->
+                        <div class="d-flex align-items-center gap-3 mb-2 me-2">
+                            <i class="fab fa-cc-visa fa-2x card-icon" aria-hidden="true" title="Visa"></i>
+                            <i class="fab fa-cc-mastercard fa-2x card-icon" aria-hidden="true" title="Mastercard"></i>
+                            <i class="fab fa-cc-paypal fa-2x card-icon" aria-hidden="true" title="PayPal"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="bootstrap-5.3.8-dist/jquery-3.7.1.min.js"></script>
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
